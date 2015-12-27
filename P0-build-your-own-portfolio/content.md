@@ -64,24 +64,24 @@ Ok, now let's get started in earnest. We want to put some information on the por
 #Adding the HTML
 There are some great new HTML5 additions, that make adding components to a web site quite self explanatory. Here are a few tags that can be used to add components:
 
-- **<article>**  Represents an independent piece of content of a document, such as a blog entry or newspaper article.
-- **<audio>**  Defines an audio file.
-- **<footer>**  Represents a footer for a section and can contain information about the author, copyright information, et cetera.
-- **<header>**  Represents a group of introductory or navigational aids.
-- **<nav>**  Represents a section of the document intended for navigation.
-- **<section>**  Represents a generic document or application section.
+- `<article>`  Represents an independent piece of content of a document, such as a blog entry or newspaper article.
+- `<audio>`  Defines an audio file.
+- `<footer>`  Represents a footer for a section and can contain information about the author, copyright information, et cetera.
+- `<header>`  Represents a group of introductory or navigational aids.
+- `<nav>`  Represents a section of the document intended for navigation.
+- `<section>`  Represents a generic document or application section.
 
 Some of the tags from HTML versions before that are also great to know are the following tags:
 
-- **<button>**  Represents a clickable button.
-- **<div>**  Is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes or because they share attribute values. It should be used only when no other semantic element (such as <article> or <nav>) is appropriate.
-- **<h1> ... <h6>**  Heading elements implement six levels of document headings, <h1> is the most important and <h6> is the least. A heading element briefly describes the topic of the section it introduces.
-- **<img src="a_url_to_somewhere" />**  Represents an image in the document. It is a self closing tag and has no closing tag. Note the backslash.
-- **<li>**  Is used to represent an item in a list. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>).
-- **<ol>**  Represents an ordered list of items. Typically, ordered-list items are displayed with a preceding numbering, which can be of any form, like numerals, letters or Romans numerals or even simple bullets.
-- **<p>**  Represents a paragraph of text.
-- **<span>**  Is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes for example.
-- **<ul>**  Represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless. 
+- `<button>`  Represents a clickable button.
+- `<div>`  Is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes or because they share attribute values. It should be used only when no other semantic element (such as <article> or <nav>) is appropriate.
+- `<h1> ... <h6>`  Heading elements implement six levels of document headings, <h1> is the most important and <h6> is the least. A heading element briefly describes the topic of the section it introduces.
+- `<img src="a_url_to_somewhere" />`  Represents an image in the document. It is a self closing tag and has no closing tag. Note the backslash.
+- `<li>`  Is used to represent an item in a list. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>).
+- `<ol>`  Represents an ordered list of items. Typically, ordered-list items are displayed with a preceding numbering, which can be of any form, like numerals, letters or Romans numerals or even simple bullets.
+- `<p>`  Represents a paragraph of text.
+- `<span>`  Is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes for example.
+- `<ul>`  Represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless. 
 
 > [action]
 > Look at the picture above and think about which HTML tags should be used to add the content on the page. Don't worry about the styling for now, just get all the content on the page for now.
