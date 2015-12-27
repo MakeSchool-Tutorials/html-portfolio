@@ -109,23 +109,25 @@ Before adding the middle section, let's focus on the bottom as it has only two a
 
 > [solution]
 > The bottom section should contain the footer tag and within it, the title of the section as well as the button to download the CV.
->
+>```
 >    <footer>
 >        <h3>About</h3>
 >        <button>Download My CV</button>
 >    </footer>
+>```
 
 The middle section contains our head image, a logo and a couple of catchy phrases that bring attention to the page. 
 
 > [solution]
 > Our head image and our logo should of course be in <img> tags. The two phrases could be in h1 and h2 tags to achieve a hierarchy of the two phrases.
->
+>```
 >    <section>
 >        <img src="https://goo.gl/RG3GtK" />
 >        <img src="http://placekitten.com/g/600/600" />
 >        <h1>Hello I'm Kitty</h1>
 >        <h2>I love creating code</h2>
 >    </section>
+>```
 
 
 > [action]
@@ -137,7 +139,7 @@ Now that we have all of our content there, you can see that it is in dire need o
 
 > [solution]
 > The entire HTML file should look like this now:
->
+>```
 >    <html>
 >        <head>
 >            <title>Make School's Portfolio</title>
@@ -167,4 +169,5 @@ Now that we have all of our content there, you can see that it is in dire need o
 >            </footer>
 >        </body>
 >    </html>
->    
+>```
+    
