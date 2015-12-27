@@ -93,16 +93,17 @@ It would be easiest to think of the website in sections. The top section of the 
 
 > [solution]
 > The top section should contain a header tag and a nav tag, with an unordered list and the appropriate link tags, like so:
->
->    `<header>`
->      `<nav>`
->          `<ul>`
->              `<li><a href="#">Home</a></li>`
->              `<li><a href="#">Gallery</a></li>`
->              `<li><a href="#">Contact</a></li>`
->          `</ul>`
->      `</nav>`
->    `</header>`
+>```
+>    <header>
+>      <nav>
+>          <ul>
+>              <li><a href="#">Home</a></li>
+>              <li><a href="#">Gallery</a></li>
+>              <li><a href="#">Contact</a></li>
+>          </ul>
+>      </nav>
+>    </header>
+>```
 
 Before adding the middle section, let's focus on the bottom as it has only two additions to the page. The bottom section will contain the title for the bottom section and the "Download My CV" button.
 
