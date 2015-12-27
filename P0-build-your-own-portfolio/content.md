@@ -75,7 +75,7 @@ Some of the tags from HTML versions before that are also great to know are the f
 
 - `<button>`  Represents a clickable button.
 - `<div>`  Is the generic container for flow content, which does not inherently represent anything. It can be used to group elements for styling purposes or because they share attribute values. It should be used only when no other semantic element (such as <article> or <nav>) is appropriate.
-- `<h1> ... <h6>`  Heading elements implement six levels of document headings, <h1> is the most important and <h6> is the least. A heading element briefly describes the topic of the section it introduces.
+- `<h1> ... <h6>`  Heading elements implement six levels of document headings, `<h1>` is the most important and `<h6>` is the least. A heading element briefly describes the topic of the section it introduces.
 - `<img src="a_url_to_somewhere" />`  Represents an image in the document. It is a self closing tag and has no closing tag. Note the backslash.
 - `<li>`  Is used to represent an item in a list. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>).
 - `<ol>`  Represents an ordered list of items. Typically, ordered-list items are displayed with a preceding numbering, which can be of any form, like numerals, letters or Romans numerals or even simple bullets.
