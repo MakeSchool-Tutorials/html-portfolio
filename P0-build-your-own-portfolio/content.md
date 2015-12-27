@@ -83,6 +83,9 @@ Some of the tags from HTML versions before that are also great to know are the f
 - `<span>`  Is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes for example.
 - `<ul>`  Represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless. 
 
+> [info]
+> A full list of all existing HTML elements with their explanations can be found at [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). A great source for any web related questions you might have.
+
 > [action]
 > Look at the picture above and think about which HTML tags should be used to add the content on the page. Don't worry about the styling for now, just get all the content on the page for now.
 
@@ -91,15 +94,15 @@ It would be easiest to think of the website in sections. The top section of the 
 > [solution]
 > The top section should contain a header tag and a nav tag, with an unordered list and the appropriate link tags, like so:
 >
->    <header>
->      <nav>
->          <ul>
->              <li><a href="#">Home</a></li>
->              <li><a href="#">Gallery</a></li>
->              <li><a href="#">Contact</a></li>
->          </ul>
->      </nav>
->    </header>
+>    `<header>`
+>      `<nav>`
+>          `<ul>`
+>              `<li><a href="#">Home</a></li>`
+>              `<li><a href="#">Gallery</a></li>`
+>              `<li><a href="#">Contact</a></li>`
+>          `</ul>`
+>      `</nav>`
+>    `</header>`
 
 Before adding the middle section, let's focus on the bottom as it has only two additions to the page. The bottom section will contain the title for the bottom section and the "Download My CV" button.
 
