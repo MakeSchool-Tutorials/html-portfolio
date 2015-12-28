@@ -79,25 +79,29 @@ Once you have added the file, we need to add some selectors into our HTML and th
 
 > [info]
 > **CSS Terminology**
+> 
 > Applying a style to an HTML element is done by CSS selectors. There are several selectors but for now we are most interested in:
 >
 > - class selectors (can be reused in the document)
 > - id selectors (can only be used on one element only)
 > - tag selectors (styles all tags of this kind)
 >
-> The class selector is added to the HTML by using the class attribute. `<h1 class="blue">Hello Kitty</h1>`. It is then referenced in the CSS by using a dot before the class name `.blue`.
-> The id selector is added to the HTML by using the id attribute. `<h1 id="blue">Hello Kitty</h1>`. It is then referenced in the CSS by using a hashtag before the class name `#blue`.
+> The class selector is added to an HTML element using the class attribute. For example, here we specifiy that this `h1` tag should be of class `blue`: `<h1 class="blue">Hello Kitty</h1>`. In the CSS we can create a class by using a dot before the class name, like this: `.blue`.
+> The id selector is added to an HTML element using the id attribute. Here we specify that this `h1` tag should have `id` `blue`: `<h1 id="blue">Hello Kitty</h1>`. In the CSS we can create an id by using a hashtag before the id name, like this: `#blue`.
 > The tag selector it not added to the HTML at all. Instead we reference the HTML tag in the CSS directly `h1`. 
-> The three rules would look like this in CSS:
+> The three rules look like this in CSS:
 > ```
+> 	  /* class selector */
 >    .blue {
 >        color: blue;
 >    }
 >    
+> 	  /* id selector */
 >    #blue {
 >        color: blue;
 >    }
 >    
+>    /* tag selector */
 >    h1 {
 >        color: blue;
 >    } 
