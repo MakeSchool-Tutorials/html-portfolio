@@ -58,6 +58,8 @@ The file portfolio.css lives inside a folder called **css** (for convention and 
 > [action]
 > Can you see how similar option 3 is to option 2? What option do you think is the best of all 3? And why do you think that is?
 
+<!-- Comment to break actionable boxes. -->
+
 > [solution]
 > Option 1 makes the HTML file quite difficult to read as it mixes our markup language with styling. It also prevents us from reusing any of the styling but instead having to set each style explicitly. Option 2 is better in that regard because
 > - it provides a clear separation of markup from styling
@@ -71,7 +73,10 @@ The file portfolio.css lives inside a folder called **css** (for convention and 
 > - you only have to change the CSS rules in one place, rather than for each file
 
 #What is CSS exactly?
-OK, so let's go with the last option for our project by adding a folder called **css** into our portfolio folder. It will contain all of our CSS files. CSS stands for **Cascading Style Sheets**, which means that rules cascade. If you apply two rules of the same property to one element, the last rule will take precedence over any rules that were declared before in the stylesheet. This is because browsers read stylesheets top to bottom, thus cascading over any rules that were declared for an element.
+OK, so let's go with the last option for our project by adding a folder called **css** into our portfolio folder. It will contain all of our CSS files.
+
+> [action]
+> Add a folder called css to your project.
 
 ![css folder within portfolio](./1-css-folder.png "css folder within portfolio")
 
@@ -86,9 +91,10 @@ Once you have added the file, we need to add some selectors into our HTML and th
 > - id selectors (can only be used on one element only)
 > - tag selectors (styles all tags of this kind)
 >
-> The class selector is added to an HTML element using the class attribute. For example, here we specifiy that this `h1` tag should be of class `blue`: `<h1 class="blue">Hello Kitty</h1>`. In the CSS we can create a class by using a dot before the class name, like this: `.blue`.
-> The id selector is added to an HTML element using the id attribute. Here we specify that this `h1` tag should have `id` `blue`: `<h1 id="blue">Hello Kitty</h1>`. In the CSS we can create an id by using a hashtag before the id name, like this: `#blue`.
-> The tag selector it not added to the HTML at all. Instead we reference the HTML tag in the CSS directly `h1`. 
+> The **class** selector is added to an HTML element using the class attribute. For example, here we specifiy that this `h1` tag should be of class `blue`: `<h1 class="blue">Hello Kitty</h1>`. In the CSS we can create a class by using a dot before the class name, like this: `.blue`.
+> The **id** selector is added to an HTML element using the id attribute. Here we specify that this `h1` tag should have `id` `blue`: `<h1 id="blue">Hello Kitty</h1>`. In the CSS we can create an id by using a hashtag before the id name, like this: `#blue`.
+> The **tag** selector is not added to the HTML at all. Instead we reference the HTML tag in the CSS directly like so: `h1`. 
+>
 > The three rules look like this in CSS:
 > ```
 > 	  /* class selector */
@@ -111,17 +117,21 @@ Once you have added the file, we need to add some selectors into our HTML and th
 
 OK, that was enough theory for now, let's get going and actually add some styles! We start by adding the `<link>` tag to the `<head>` element. 
 
-```
-<head>
-    <title>Make School's Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
-</head>
-```
+> [action]
+> Add the following code to your HTML file:
+> ```
+>    <head>
+>        <title>Make School's Portfolio</title>
+>        <link rel="stylesheet" type="text/css" href="./css/portfolio.css">
+>    </head>
+> ```
 
 Let's add some style to make sure that our two files are actually connected.
 
 > [action]
 > Add any of the above styles to the CSS and don't forget to add a selector in your HTML if you need to. Has any of the HTML changed color? If yes, the files are connected. If not, make sure that you have used the right file path in the href.
+
+<!-- Comment to break actionable boxes. -->
 
 > [solution]
 > In the HTML file, you should add something like this to your HTML:
@@ -130,11 +140,11 @@ Let's add some style to make sure that our two files are actually connected.
 > If you've done any of this, then you should see the title "Hello I'm Kitty" in blue. 
 
 #Using the Inspector
-One thing to make the live of a web developer easier, is the inspector. It's a tool that comes with Chrome, Firefox and many other browsers. It can be called different things but is usually accessed by right clicking on your website and clicking **Inspect** or **Inspect element**. 
+One thing to make the life of a web developer easier is the inspector. It's a tool that comes with Chrome, Firefox and many other browsers. It might be called different things but is usually accessed by right clicking on your website and clicking **Inspect** or **Inspect element**. 
 
 ![Open Inspector in Chrome](./3-open-inspector.png "Open Inspector in Chrome")
 
-Depending on where you click, the inspector will show you the CSS properties of the element. And this is the best part, you can change them right there and then and try out new CSS properties and values!
+Depending on where you click, the inspector will show you the CSS properties of the element that your cursor was over. And this is the best part, you can change the CSS properties right there and then and try out new CSS properties and values!
 
 ![Change values in Inspector](./4-change-values.png "Change values in Inspector")
 

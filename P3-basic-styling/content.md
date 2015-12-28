@@ -27,6 +27,8 @@ Now that you know how it's done, let's add some more default styles to our CSS f
 >
 > A good place to find some colors to add to your page is [color-hex](http://www.color-hex.com/). If you're looking for fonts, try [cssfontstack](http://www.cssfontstack.com/).
 
+<!-- Comment to break actionable boxes. -->
+
 > [info]
 > **Hex values, RGB and more**
 > You've probably noticed that I used the word blue in our first example to set the font color. But with the background-color, I used hex values. It's also possible to use RGB values. There's a good write up on Wikipedia [here](https://en.wikipedia.org/wiki/Web_colors) about web colors, so just go ahead and find out more about the differences between these.
@@ -36,6 +38,8 @@ First we add the border at the top. We've chosen the color that we already have 
 
 > [action]
 > Add a top border to the header. The property **border** can take 3 shorthand values. The first one is the type of border you want (solid, dotted, dashed), the second parameter is the size of the border in pixels and the last parameter is the color. 
+
+<!-- Comment to break actionable boxes. -->
 
 > [solution]
 > Don't forget to add a class to your header tag in the HTML!
@@ -64,6 +68,8 @@ Now that we have a nice border at the top, let's make our links look better than
 
 > [action]
 > Make the list vertical by using the rule `display:inline;` and `list-style:none;` on the list items. Add some margin to our nav tag to move it away from the left and down from the top. Don't forget to use classes!
+
+<!-- Comment to break actionable boxes. -->
 
 > [solution]
 > In the CSS file:
@@ -97,6 +103,8 @@ As we want the link changes to be sitewide and not just for this instance, let's
 > [action]
 > Use the a tag selector to add a default color to links and remove the underline of the link. The text-decoration property will help you.
 
+<!-- Comment to break actionable boxes. -->
+
 > [solution]
 > ```
 >    a {
@@ -114,6 +122,7 @@ This should achieve something like this:
 ![basic header styling](./1-header.png "basic header styling")
 
 #Positioning the Content
+After the header, let's take care of the main content. 
 
 #Basic Styling for the Footer
 
