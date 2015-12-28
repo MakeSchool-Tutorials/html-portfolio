@@ -3,27 +3,28 @@ title: "Build Your Own Portfolio!"
 slug: build-your-own-portfolio
 ---
 
-#Get started with HTML, CSS and JavaScript
-Most developers have a blog or a portfolio where they can showcase their work and attract potential employers. It’s of course possible to use one of the many templates that are available for free or a fee but the templates you find might not be what you want exactly but you’ll have to accept it or…
+#Get started with HTML
+Most developers have a blog or a portfolio where they can showcase their work and attract potential employers. It is of course possible to use one of the many templates that are available for free or a fee but the templates you find might not be what you want exactly but you will have to accept it or…
 
-Make your own portfolio from scratch! It’s not that very hard and will teach you HTML, CSS and JavaScript. This tutorial assumes that you have no experience but is also aimed at people who already have written in those three languages and will add some advanced concepts. We will make our portfolio mobile friendly with advanced CSS3 concepts and give it a cool looking gallery using a neat mobile friendly JavaScript plugin. 
+Make your own portfolio from scratch! It is not that very hard and will teach you HTML, CSS and JavaScript. This tutorial assumes that you have no experience but is also aimed at people who already have written in those three languages and will add some advanced concepts. We will make our portfolio mobile friendly with advanced CSS3 concepts and give it a cool looking gallery using a neat mobile friendly JavaScript plugin. 
 
-At the end of our tutorial, we will put our newly created website live to Github, so we’ll also get to cover version control a bit.
+At the end of our tutorial, we will put our newly created website live to Github, so we will also get to cover version control a bit.
 
 Our complete portfolio will look like this on desktop & mobile:
 
 ![Portfolio on desktop and mobile](./1-portfolio-desktop.png "Portfolio on desktop and mobile")
 
-Alright, let’s get started. We will use the popular text editor Sublime Text 3 to create our files and the Chrome browser to inspect our files and run the portfolio.
+Alright, let's get started. We will use the popular text editor Sublime Text 3 to create our files and the Chrome browser to inspect our files and run the portfolio.
 
 You can use any text editor you feel comfortable with, for example the Atom editor, WebStorm or just your simple old NotePad or TextEdit. It really depends on your own preference and what you want from your text editor.
 
-Let’s start by making a folder on your computer and name it **portfolio**. Inside it, let’s create an HTML file and name it **index.html**. Depending on your text editor, specifying a file with .html will color the syntax while you’re writing the code, which makes it easier to read and work with.
+Let’s start by making a folder on your computer and name it **portfolio**. Inside it, let’s create an HTML file and name it **index.html**. Depending on your text editor, specifying a file with **.html** will color the syntax while you are writing the code, which makes it easier to read and work with.
 
 > [info]
 > To boilerplate or not to boilerplate?
 > ...
 
+#Creating your first HTML page
 Let’s create the basic outline of an HTML file. An HTML file consists of HTML tags and needs at least the following:
 
 ```
@@ -59,9 +60,9 @@ We can do this by adding the `<title>` tag to the `<head>` tag, which is respons
 
 ![New title for website](./3-title.png "New title for website")
 
-Ok, now let's get started in earnest. We want to put some information on the portfolio that shows who we are and what work we have done, so we need to add some information about us.
+OK, now let's get started in earnest. We want to put some information on the portfolio that shows who we are and what work we have done, so we need to add some information about us.
 
-#Adding the HTML
+#HTML tags
 There are some great new HTML5 additions, that make adding components to a web site quite self explanatory. Here are a few tags that can be used to add components:
 
 - `<article>`  Represents an independent piece of content of a document, such as a blog entry or newspaper article.
@@ -84,11 +85,12 @@ Some of the tags from HTML versions before that are also great to know are the f
 - `<ul>`  Represents an unordered list of items, namely a collection of items that do not have a numerical ordering, and their order in the list is meaningless. 
 
 > [info]
-> A full list of all existing HTML elements with their explanations can be found at [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). A great source for any web related questions you might have.
+> A full list of all existing HTML elements with their explanations can be found at [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element). An excellent source for any web related questions you might have.
 
 > [action]
 > Look at the picture above and think about which HTML tags should be used to add the content on the page. Don't worry about the styling for now, just get all the content on the page for now.
 
+#Adding the content section by section
 It would be easiest to think of the website in sections. The top section of the page will contain the navigation to other pages. 
 
 > [solution]
