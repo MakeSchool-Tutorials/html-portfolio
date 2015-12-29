@@ -6,7 +6,7 @@ slug: build-your-own-portfolio
 #Get started with HTML
 Alright, let's get started. We will use the popular text editor Sublime Text 3 to create our files and the Chrome browser to inspect our files and run the portfolio.
 
-You can use any text editor you feel comfortable with, for example the Atom editor, WebStorm or just your simple old NotePad or TextEdit. It really depends on your own preference and what you want from your text editor.
+You can use any text editor you feel comfortable with, for example the [Atom editor](https://atom.io/), [WebStorm](https://www.jetbrains.com/webstorm/) or just your simple old NotePad (on Windows) or TextEdit (on Mac). It really depends on your own preference and what you want from your text editor.
 
 Let’s start by making a folder on your computer and name it **portfolio**. Inside it, let’s create an HTML file and name it **index.html**. Depending on your text editor, specifying a file with **.html** will color the syntax while you are writing the code, which makes it easier to read and work with.
 
@@ -18,7 +18,7 @@ Let’s start by making a folder on your computer and name it **portfolio**. Ins
 
 #Creating your first HTML page
 > [action]
-> Let’s create the basic outline of an HTML file. An HTML file consists of HTML tags and needs at > least the following:> 
+> Let’s create the basic outline of an HTML file. An HTML file consists of HTML tags and needs at least the following tags:
 > 
 > ```
 > <html>
@@ -41,7 +41,7 @@ You should see something like this:
 Do you spot the index.html title in the tab of the browser? 
 
 > [action]
-> Let's change that to something more appropriate like "MakeSchool's Portfolio" - you should change this to something that reflects your name, username or anything else that you want to showcase.
+> Let's change that to something more appropriate like "MakeSchool's Portfolio" - you should change this to something that reflects your name, username or anything else that you want to name your page.
 >
 > We can do this by adding the `<title>` tag to the `<head>` tag, which is responsible for the name of your website.
 > 

@@ -7,20 +7,20 @@ slug: basic-styling
 Now that the files are connected, let's add some basic rules to our CSS to make the page look more colorful. One way to do that is to add some background color to the page. Pick any color you like, keeping in mind that your users will have to see that page and you want to make a good impression and keep your text legible.
 
 > [action]
-> Use the tag selector for body and a rule to it in the CSS file. Remember that a tag selector has no dot nor hashtag, then add curly brackets and within it, the following rule:
+> Use the tag selector for body and add a rule to it in the CSS file. Remember that a tag selector has no dot nor hashtag, then add curly brackets and within it, the following rule:
 > ```
 >    background-color: #dfdfdf;
 > ```
 > Save your file and check out your portfolio so far. 
 
-Now that you know how it's done, let's add some more default styles to our CSS file like the color of our font, the font type itself and color for our links. The default styles provided by each browser isn't very fancy nowadays, so let's put some style onto that page!
+Now that you know how it's done, let's add some more default styles to our CSS file like the color of our font, the font type itself and color for our links. The default styles provided by each browser aren't very fancy nowadays, so let's put some style onto that page!
 
 > [action]
 > Come up with a few rules that you always want to see on your page and add them to the same body tag. Here are some examples of things you could add:
 > 
-> - color
-> - font-family
-> - font-size
+> - color of the font
+> - font-family (changes the font type you use)
+> - font-size 
 > - more [CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference), click through each property to see what they do
 >
 > You can see lots of ideas of what CSS can do in the [CSS Zen Garden](http://www.mezzoblue.com/zengarden/alldesigns/).
@@ -31,6 +31,7 @@ Now that you know how it's done, let's add some more default styles to our CSS f
 
 > [info]
 > **Hex values, RGB and more**
+>
 > You've probably noticed that I used the word blue in our first example to set the font color. But with the background-color, I used hex values. It's also possible to use RGB values. There's a good write up on Wikipedia [here](https://en.wikipedia.org/wiki/Web_colors) about web colors, so just go ahead and find out more about the differences between these.
 
 #Basic Styling for the Header

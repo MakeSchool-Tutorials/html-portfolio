@@ -76,7 +76,7 @@ The file portfolio.css lives inside a folder called **css** (for convention and 
 OK, so let's go with the last option for our project by adding a folder called **css** into our portfolio folder. It will contain all of our CSS files.
 
 > [action]
-> Add a folder called css to your project.
+> Add a folder called css to your project and add a file to it called portfolio.css.
 
 ![css folder within portfolio](./1-css-folder.png "css folder within portfolio")
 
@@ -97,12 +97,12 @@ Once you have added the file, we need to add some selectors into our HTML and th
 >
 > The three rules look like this in CSS:
 > ```
-> 	  /* class selector */
+> 	 /* class selector */
 >    .blue {
 >        color: blue;
 >    }
 >    
-> 	  /* id selector */
+> 	 /* id selector */
 >    #blue {
 >        color: blue;
 >    }
@@ -136,7 +136,7 @@ Let's add some style to make sure that our two files are actually connected.
 > [solution]
 > In the HTML file, you should add something like this to your HTML:
 > `<h1 class="blue">Hello I'm Kitty</h1>` or `<h1 id="blue">Hello I'm Kitty</h1>`
-> You can also add nothing into your HTML and use the tag selector in the CSS. 
+> You can also add nothing into your HTML and use the tag selector in the CSS instead. 
 > If you've done any of this, then you should see the title "Hello I'm Kitty" in blue. 
 
 #Using the Inspector
