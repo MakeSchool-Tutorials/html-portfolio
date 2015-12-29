@@ -123,7 +123,7 @@ Before adding the middle section, let's focus on the bottom as it has only two a
 >```
 >    <footer>
 >        <h3>About</h3>
->        <button>Download My CV</button>
+>        <div>Download My CV</div>
 >    </footer>
 >```
 
@@ -179,7 +179,7 @@ Now that we have all of our content there, you can see that it is in dire need o
 >    
 >            <footer>
 >                <h3>About</h3>
->                <button>Download My CV</button>
+>                <div>Download My CV</div>
 >            </footer>
 >        </body>
 >    </html>

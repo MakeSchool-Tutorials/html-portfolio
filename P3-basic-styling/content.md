@@ -34,7 +34,20 @@ Now that you know how it's done, let's add some more default styles to our CSS f
 >
 > You've probably noticed that I used the word blue in our first example to set the font color. But with the background-color, I used hex values. It's also possible to use RGB values. There's a good write up on Wikipedia [here](https://en.wikipedia.org/wiki/Web_colors) about web colors, so just go ahead and find out more about the differences between these.
 
-#Basic Styling for the Header
+<!-- Comment to break actionable boxes. -->
+
+> [solution]
+> Here is the CSS that we used to style some basics on our page:
+> ```
+>    body {
+>      background-color: #dfdfdf;
+>      color: #333333;
+>      font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+>    }
+> ```
+> It's good to set a group of fonts as some operating systems might not have the first font you specified and will fall back on the second specified font. If that doesn't exist either, it will try the third one and so on.
+
+#Basic styling for the header
 First we add the border at the top. We've chosen the color that we already have in the logo. There are simple Chrome extensions out there that can help you with selecting a color from a web page, like [Colorzilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp) for example.
 
 > [action]
@@ -55,7 +68,7 @@ Now if you reload the page, do you see that there is some spacing between the bo
 This is one of those cases where all browsers display it slightly different. Each browser vendor uses their own default stylesheet to display certain elements. One of the things they do is add a default margin and padding to HTML elements. One way to prevent this, is to use a normalized stylesheet (as mentioned in the boilerplate info box). We will just use a very simplified version for that by adding the following rules to the very top of our CSS file.
 
 > [action]
-> Add this rule to your stylesheet and see what that does to your border:
+> Add this rule to the very top of your stylesheet and see what that does to your border:
 > ```
 >    * {
 >      margin: 0;
@@ -83,6 +96,7 @@ Now that we have a nice border at the top, let's make our links look better than
 >    .nav-item {
 >      list-style: none;
 >      display: inline;
+>      margin-right: 12px;
 >    }
 > ```
 >
@@ -117,20 +131,216 @@ As we want the link changes to be sitewide and not just for this instance, let's
 >      color: #48b2e8;
 >    }
 > ```
+> This should achieve something like this: 
+>
+> ![basic header styling](./1-header.png "basic header styling")
 
-This should achieve something like this: 
+#Basic styling for the footer
+As the footer has only two items that need styling, let's transform it before the main content. The footer needs to get a new font color for the "About" header and we need to style the button. Let's start with the color and casing of the header. 
 
-![basic header styling](./1-header.png "basic header styling")
+> [action]
+> Change the font-color and casing of the "About" header. Add a class to the header first and then use the "text-transform" and color properties. 
 
-#Positioning the Content
-After the header, let's take care of the main content. 
+<!-- Comment to break up actionable boxes. -->
 
-#Basic Styling for the Footer
+> [solution]
+> Because we want to reuse the title later on in the other titles. We added one class for rules that the other titles have in common called *title* and another class called *footer-sub* that will control the font-size of this particular title.
+> 
+> In the HTML file:
+> ```
+>    <footer>
+>        <h3 class="footer-sub title">About</h3>
+>        <div>Download My CV</div>
+>    </footer>
+> ```
+> In the CSS file:
+> ```
+>    .title {
+>      color: #019cdb;
+>      text-transform: uppercase;
+>      letter-spacing: 3px;
+>    }
+> 
+>    .footer-sub {
+>      font-size: 30px;
+>    }
+> ```
+
+Once we've changed those, we should add those two horizontal lines left and right of the title. That will require some flexbox magic though, so let's hold off with that until the next section where we will cover flexbox in depth.
+
+Let's focus our attention on the button instead. First we need to give the button a border to make it look like a button and let's color in the same theme as the rest our page. We should also give it a hover effect, so users know that they have to click it to download the CV.
+
+> [action]
+> Add a border to the button, play with the options that the inspector provides to get a feel for what styles are available. You want to use the properties: *border*, *display:inline-block;*, *padding* and for the hover effect, you need to use the pseudo selector :hover again. In there you might want to use the property *cursor*.
+
+<!-- Comment to break up actionable boxes. -->
+
+> [solution]
+> You want to add a class to the HTML div:
+> ```
+>    <div class="button">Download My CV</div>
+> ```
+> And then we add the following rules to the class and use the pseudo selector :hover.
+> ```
+>    .button {
+>      border: 2px solid #019cdb;
+>      color: #019CDB;
+>      display: inline-block; /* To wrap the border just around the content */
+>      font-size: 20px;
+>      margin-top: 12px;
+>      padding: 12px 30px;
+>    }
+>    
+>    .button:hover {
+>      background-color: #019CDB;
+>      color: #dfdfdf;
+>      cursor: pointer;
+>    }
+> ```
+> This should achieve something like this: 
+>
+> ![footer styling](./2-footer.png "footer styling")
+
+
+#Basic styling of the main content
+After the header and footer, let's take care of the main content. The kitten image should be round and we want our logo to be positioned above the kitten. Our two catch phrases should be centered on the image. Making our image a circle and centering content on web pages used to be an art in hacking and making complicated changes to our web page just to get things centered. Thanks to the latest advances in CSS, we can now forget all of this and use the power of flexbox to get everything in place! We'll cover that part in the next section. For now let's focus on changing the font size, color and type.
+
+> [action]
+> Pick a font you like on [cssfontstack](http://www.cssfontstack.com/) and add it to the class selector of your main title and sub title. Then select a color for the font as well as a size for the font and add it to the rules. The rules that you might want to look into are *text-transform*, *letter-spacing* and *font-size*.
+
+<!-- Comment to break up actionable boxes. -->
+
+> [solution]
+> You need to add a class to the h1 and h2 tag. We added one class for rules that the two titles have in common called *title* and a separate class for each title to manipulate the font-size.
+>
+> The HTML file:
+> ```
+>    <section>
+>        <img src="https://goo.gl/RG3GtK" />
+>        <img src="http://placekitten.com/g/600/600" />
+>        <h1 class="main title ">Hello I'm Kitty</h1>
+>        <h2 class="sub title">I love creating code</h2>
+>    </section>
+> ```
+> The CSS file:
+> ```
+>    .title {
+>      color: #019cdb;
+>      text-transform: uppercase;
+>      letter-spacing: 3px;
+>    }
+>    
+>    .main {
+>      font-size: 78px;
+>    }
+>    
+>    .sub {
+>      font-size: 57px;
+>    }
+> ``` 
+> This should achieve something like this: 
+>
+> ![main content styling](./3-main-content.png "main content styling")
 
 Once you have had some time adding CSS properties to your page, make sure the page looks like you expected. Below is a solution that will style the page to look like the page we showed at the beginning of this tutorial. It will give you an idea of things you can add to the page that will make the page more colorful and modern. Don't get ahead of yourself in terms of centering the content and making the image circular. We'll cover this in the next part using CSS3.
 
 > [solution]
 > Just in case, we lost you somewhere, here are the HTML and CSS file that will make the page look like this:
-> PIC here
+> ![All content with basic styling](./4-all-content.png "All content with basic styling")
 >  
-> Code here
+> HTML file: 
+> ```
+>    <body class="default">
+>      <header class="header">
+>          <nav class="nav">
+>              <ul>
+>                  <li class="nav-item"><a href="#">Home</a></li>
+>                  <li class="nav-item"><a href="#">Gallery</a></li>
+>                  <li class="nav-item"><a href="#">Contact</a></li>
+>              </ul>
+>          </nav>
+>      </header>
+>    
+>      <section>
+>          <img src="https://goo.gl/RG3GtK" />
+>          <img src="http://placekitten.com/g/600/600" />
+>          <h1 class="main title ">Hello I'm Kitty</h1>
+>          <h2 class="sub title">I love creating code</h2>
+>      </section>
+>    
+>      <footer>
+>          <h3 class="footer-sub title">About</h3>
+>          <div class="button">Download My CV</div>
+>      </footer>
+>    </body>
+> ```
+> And the CSS file so far:
+> ```
+>    * {
+>      margin: 0;
+>      padding: 0;
+>    }
+>    
+>    body {
+>      background-color: #dfdfdf;
+>      color: #333333;
+>      font-family: 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+>    }
+>    
+>    a {
+>      color: #019cdb;
+>      text-decoration: none;
+>    }
+>    
+>    a:hover {
+>      color: #48b2e8;
+>    }
+>    
+>    .header {
+>      border-top: solid 8px #019cdb;
+>    }
+>    
+>    .nav {
+>      margin-top: 12px;
+>      margin-left: 10%;
+>    }
+>    
+>    .nav-item {
+>      list-style: none;
+>      display: inline;
+>      margin-right: 12px;
+>    }
+>    
+>    .title {
+>      color: #019cdb;
+>      text-transform: uppercase;
+>      letter-spacing: 3px;
+>    }
+>    
+>    .main {
+>      font-size: 78px;
+>    }
+>    
+>    .sub {
+>      font-size: 57px;
+>    }
+>    
+>    .footer-sub {
+>      font-size: 30px;
+>    }
+>    
+>    .button {
+>      border: 2px solid #019cdb;
+>      color: #019CDB;
+>      display: inline-block; /* To wrap the border just around the content */
+>      font-size: 20px;
+>      margin-top: 12px;
+>      padding: 12px 30px;
+>    }
+>    
+>    .button:hover {
+>      background-color: #019CDB;
+>      color: #dfdfdf;
+>      cursor: pointer;
+>    }
+> ```

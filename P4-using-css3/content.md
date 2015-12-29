@@ -57,7 +57,7 @@ Once you have saved your files, reload your browser and voila! Our content is pe
 > [solution]
 > You guessed it, graceful degradation! In this case we could make use of the older hacks on how to center our content and come up with a different way to make the image circular. Alternatively, we could load in different stylesheets based on browser features. This requires some more logic in the `<head>` tag or some JavaScript.
 
-
+Here, we will be using a little trick from our dev kit. To achieve those lines, we will add a `<div>` tag before and after the `<h3>` 
 
 
 
