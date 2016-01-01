@@ -61,9 +61,9 @@ I hope your answer was flexbox! Because then you are quite right. Remember how w
 >    }
 > ```
 
-And now to the sticky footer! We need to employ CSS3 trickery to keep the footer at the bottom. This also used to be a very hacky section in web development but has also been improved thanks to CSS3!
+And now to the sticky footer! We need to employ CSS3 trickery to keep the footer at the bottom. This also used to be a very hacky thing in web development but has also been improved thanks to CSS3!
 
-We will make use of the new css viewport units, which allows us to calculate the height of the main content and tell the browser to below it. This requires us to know the height of the footer but that's all!
+We will make use of the new css viewport units, which allows us to calculate the height of the main content and tell the browser to put the footer below it. This requires us to know the height of the footer but that's all!
 
 > [action]
 > Add a div around the entire content except the footer tag. Then add a class to it and add the following rule to the class:
@@ -159,6 +159,8 @@ Last but not least, let's make the image smaller. Ideally it takes up the center
 > ```
 
 And there you have it, a portfolio page where everything is perfectly in place!
+
+![portfolio with styling](./1-finished.png "portfolio with styling")
 
 > [solution]
 > If we lost you somewhere, here's the current HTML file:
@@ -337,8 +339,6 @@ And there you have it, a portfolio page where everything is perfectly in place!
 >      width: 60%;
 >    }
 > ```
-
-![portfolio with styling](./1-finished.png "portfolio with styling")
 
 But hold on, try resizing the browser into a smaller size. Uh oh, now the font is way too big for our mobile screen and the layout looks broken! 
 
