@@ -8,18 +8,19 @@ Now that we have some basic styling, let's get everything into place! We also wa
 
 > [info]  
 > **The box model of HTML elements**
+>
 > In an HTML document, each element is represented as a rectangular box. Determining the size, properties — like its color, background, borders aspect — and the position of these boxes is the goal of the rendering engine (inside the browser).
 > In CSS, each of these rectangular boxes is described using the standard box model. This model describes the content of the space taken by an element. Each box has four edges: the **margin** edge, **border** edge, **padding** edge, and **content** edge.
 > 
 > ![box model](./2-box-model.png "box model")
 > 
-> The content area is the area containing the real content of the element. It often has a background, a color or an image.
+> The **content** area is the area containing the real content of the element. It often has a background, a color or an image.
 >
-> The padding area extends to the border surrounding the padding. When the content area has a background, color, or image set on it, this will extend into the padding, which is why you can think of the padding as extending the content. The padding is located inside the padding edge.
+> The **padding** area extends to the border surrounding the padding. When the content area has a background, color, or image set on it, this will extend into the padding, which is why you can think of the padding as extending the content. The padding is located inside the padding edge.
 >
-> The border area extends the padding area to the area containing the borders. It is the area inside the border edge.
+> The **border** area extends the padding area to the area containing the borders. It is the area inside the border edge.
 >
-> The margin area extends the border area with an empty area used to separate the element from its neighbors. It is the area inside the margin edge.
+> The **margin** area extends the border area with an empty area used to separate the element from its neighbors. It is the area inside the margin edge.
 
 <!-- Comment to break actionable boxes. -->
 
@@ -91,6 +92,7 @@ Once you have saved your files, reload your browser and voil&#224;! Our content 
 
 > [info]
 > **When can I use new CSS3 rules?**
+>
 > As a developer it is important that you stay up to date on new technologies and it's also fun to start playing with new technologies. However, it is also important that you are aware that not all browsers will start supporting new ideas right away or maybe in different ways. This might mean that you have to make the decision to either use a new technology at the risk of it not being supported by all browsers, which could mean that you will have some users not being able to access your site or certain features of it. This can of course be prevented by [graceful degradation](https://www.w3.org/wiki/Graceful_degradation_versus_progressive_enhancement#Graceful_degradation_and_progressive_enhancement_in_a_nutshell) but it's best if you are aware of it in the first place. A good source to test if a feature is available and can be used without any issues is the excellent site [Can I Use?](http://caniuse.com/).
 > As we have decided to use flexbox and border-radius, our page does not support users on IE8 (for the border-radius) and IE9 (for flexbox). To get support in IE10 and IE11, we need to use vendor-prefix. This means that our content will not have a circle image and won't be centered.
 > Any ideas how we could cater for those older browsers?
@@ -98,7 +100,7 @@ Once you have saved your files, reload your browser and voil&#224;! Our content 
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
-> You guessed it, graceful degradation! In this case we could make use of the older hacks on how to center our content and come up with a different way to make the image circular. Alternatively, we could load in different stylesheets based on browser features. This requires some more logic in the `<head>` tag or some JavaScript.
+> You guessed it, graceful degradation! In this case we could make use of the older hacks on how to center our content and come up with a different way to make the image circular. Alternatively, we could load in different stylesheets based on browser features. This requires some more logic in the `<head>` tag or some JavaScript. The source code of the [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/index.html) might give you an idea on how that is done if you are interested in finding out more. 
 
 #The z-index
 Now, let's move the content into the correct place vertically. We want the logo to be on top of the circular image and we want the titles across the circular image. 
