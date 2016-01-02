@@ -118,14 +118,14 @@ Alright, we're almost there. The only thing left to do is to move the titles on 
 Let's move the titles up, so that we get to see the footer. This is easily done by using a negative top margin again. We can add a negative margin to each title individually but it would be much easier to just have a wrapping div around it and pull them both up at the same time.
 
 > [action]
-> Add a div to surround the h1 and h2 tags. Give it a class name and add a rule to it in the CSS using a negative top margin until the footer is on the page. 
+> Add a div to surround the h1 and h2 tags. Give it a class name and add a rule to it in the CSS using a negative top margin until the footer is on the page. Add the flex and the column class to the new div too, so that our titles stay nice and centered.
 
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
 > In HTML:
 > ```
->    <div class="titles">
+>    <div class="titles flex column">
 >        <h1 class="main title ">Hello I'm Kitty</h1>
 >        <h2 class="sub title">I love creating code</h2>
 >    </div>
@@ -192,7 +192,7 @@ And there you have it, a portfolio page where everything is perfectly in place!
 >                              <img class="main-img circle" src="http://placekitten.com/g/600/600" />
 >                          </div>
 >                      </div>
->                      <div class="titles">
+>                      <div class="titles flex column">
 >                          <h1 class="main title ">Hello I'm Kitty</h1>
 >                          <h2 class="sub title">I love creating code</h2>
 >                      </div>
@@ -311,8 +311,6 @@ And there you have it, a portfolio page where everything is perfectly in place!
 >    
 >    .main-img {
 >      margin-top: -54px;
->      max-width: 100%;
->      height: auto;
 >    }
 >    
 >    .logo {
