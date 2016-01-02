@@ -35,7 +35,7 @@ There are many suggestions on which breakpoints are best out there, but we'll go
 - BP3: max-width: 992px
 - BP4: anything above 992px
 
-#Resizing the image
+#Letting the browser resize the image dynamically
 One small thing we can take care of right away is making our image resizable and letting the browser handle the dynamic resizing of the image. Two simple additions to our image class will handle this.
 
 > [action]
@@ -76,7 +76,7 @@ When you resize the browser to a width that is smaller than its height, the font
 >    }
 > ```
 
-PUT A GIF HERE OF RESIZING BROWSER
+![Resizing browser](./4-resize.gif "Resizing browser")
 
 You can see that our font looks quite pleasant in devices below 480 pixels and our default width. Now that we know how the font-size can be adjusted, let's adjust it in the in between sizes as well. 
 
@@ -131,11 +131,11 @@ Now your media query should behave as expected again. But this doesn't solve the
 > ```
 >    @media (min-width: 481px) and (max-width:630px) { 
 >      .main {
->        font-size: 50px;
+>        font-size: 46px;
 >      }
 >    
 >      .sub {
->        font-size: 36px;
+>        font-size: 33px;
 >      }
 >    }
 > ```
