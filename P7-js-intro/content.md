@@ -88,7 +88,7 @@ Now let's add our script tags to the page.
 >                <div class="button">Download My CV</div>
 >            </footer>
 >            
->            <script src="./js/vendor/jquery-1.11.3.min.js"></script>
+>            <script src="./js/vendor/jquery-2.1.4.min.js"></script>
 >            <script src="./js/portfolio.js"></script>
 >        </body>
 >    </html>
@@ -130,7 +130,7 @@ The ready function is used to execute any code when the page is loaded for the f
 <!-- Comment to break actionable boxes. -->
 
 > [info]
-> ** What are event listeners?**
+> **What are event listeners?**
 > 
 > An Event Listener is attached to an object (like a button) and waits for some action to be performed on the object, be it a mouse click, mouse hover, pressing of keys, etc. Once an event occurred it is then handled by a function, which does something based on the event. For example, a user presses a button and the function triggered calls the alert function, which displays a message to the user.
 
