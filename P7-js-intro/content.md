@@ -64,7 +64,7 @@ Now, this is where the debate lies. The browser renders a web page from top to b
 Most of the time you don't need the JavaScript as soon as the page is loaded as most of your content will most likely be written in HTML. So why load the JavaScript in before the HTML? Well exactly, we don't need that. If you've had a look at the HTML5 Boilerplate, you will have seen that the latest "best practice" is to load the JavaScript inside the body tag, just before it closes. This ensures that the HTML can render and your visitor sees something happening before it starts loading in the JavaScript.
 
 > [action]
-> Add a folder to your project and name it **js**. Inside it, create another folder called **vendor** and an empty file with the **.js** extension. Name it **portfolio.js**.   
+> Add a folder to your project and name it **js**. Create an empty file with the **.js** extension inside the js folder. Name it **portfolio.js**. Create another folder in the root directory and name it **vendor**.   
 
 ![Add JS in Sublime](./1-sublime-js.png "Add JS in Sublime")
 

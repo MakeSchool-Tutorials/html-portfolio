@@ -111,6 +111,21 @@ It would be easiest to think of the website in sections. The top section of the 
 >    </header>
 >```
 
+We haven't created any pages yet but we will add the href already now as we will do so soon! 
+
+> [action] 
+> Add the href for each list item by adding a path for each future page. The syntax should be like this: `href="./index.html"` for linking to the home page. Make similar paths for the other two links.
+
+<!-- Comment to break up actionable boxes. -->
+
+> [solution]
+> Use **./** ahead of each page to make it relevant to the page that the link is on.
+> ```
+>    <li><a href="./index.html">Home</a></li>
+>    <li><a href="./gallery.html">Gallery</a></li>
+>    <li><a href="./contact.html">Contact</a></li>
+> ```
+
 Before adding the middle section, let's focus on the bottom as it has only two additions to the page. 
 
 > [action]

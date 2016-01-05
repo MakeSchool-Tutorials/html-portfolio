@@ -139,7 +139,7 @@ As we want the link changes to be sitewide and not just for this instance, let's
 As the footer has only two items that need styling, let's transform it before the main content. The footer needs to get a new font color for the "About" header and we need to style the button. Let's start with the color and casing of the header. 
 
 > [action]
-> Change the font-color and casing of the "About" header. Add a class to the header first and then use the "text-transform" and color properties. 
+> Change the font-color, casing and text alignment of the "About" header. Add a class to the header first and then use the *text-transform*, *text-align* and *color* properties. 
 
 <!-- Comment to break up actionable boxes. -->
 
@@ -158,6 +158,7 @@ As the footer has only two items that need styling, let's transform it before th
 >    .title {
 >      color: #019cdb;
 >      text-transform: uppercase;
+>      text-align: center;
 >      letter-spacing: 3px;
 >    }
 > 
@@ -211,25 +212,19 @@ After the header and footer, let's take care of the main content. The kitten ima
 <!-- Comment to break up actionable boxes. -->
 
 > [solution]
-> You need to add a class to the h1 and h2 tag. We added one class for rules that the two titles have in common called *title* and a separate class for each title to manipulate the font-size.
+> You need to add a class to the h1 and h2 tag. We reused the *title* class from the footer and added a separate class for each title to manipulate the font-size.
 >
 > The HTML file:
 > ```
 >    <section>
 >        <img src="https://goo.gl/RG3GtK" />
 >        <img src="http://placekitten.com/g/600/600" />
->        <h1 class="main title ">Hello I'm Kitty</h1>
+>        <h1 class="main title">Hello I'm Kitty</h1>
 >        <h2 class="sub title">I love creating code</h2>
 >    </section>
 > ```
 > The CSS file:
 > ```
->    .title {
->      color: #019cdb;
->      text-transform: uppercase;
->      letter-spacing: 3px;
->    }
->    
 >    .main {
 >      font-size: 78px;
 >    }
@@ -314,6 +309,7 @@ Once you have had some time adding CSS properties to your page, make sure the pa
 >    .title {
 >      color: #019cdb;
 >      text-transform: uppercase;
+>      text-align: center;
 >      letter-spacing: 3px;
 >    }
 >    
