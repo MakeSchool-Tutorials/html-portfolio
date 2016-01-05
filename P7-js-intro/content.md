@@ -1,6 +1,6 @@
 ---
-title: "Adding a Gallery"
-slug: js-gallery
+title: "Intro to JavaScript"
+slug: js-intro
 ---     
 
 #What is JavaScript?
