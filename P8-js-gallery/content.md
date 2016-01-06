@@ -139,9 +139,6 @@ Now that the files are connected, we need to add some HTML first, so the library
 >          <a title="Title 8" href="http://placekitten.com/452/450?image=14">
 >              <img alt="Title 8" src="http://placekitten.com/452/450?image=14"/>
 >          </a>
->          <a title="Title 9" href="http://placekitten.com/452/450?image=17">
->              <img alt="Title 9" src="http://placekitten.com/452/450?image=17"/>
->          </a>
 >      </div>
 >    </section>
 > ```
@@ -172,6 +169,7 @@ We want our rows to have a certain height, so we will use the rowHeight option. 
 <!-- Comment to break actionable boxes. -->
 
 > [solution] 
+> We made each row 200 pixels high except the last row which is now justified. We also added a margin of 3 pixels around all the images for a bit of spacing. Making your gallery display the images randomly is totally up to you but we liked it, so we added that parameter.
 > ```
 >    $( document ).ready(function() {
 >      $("#gallery").justifiedGallery({
@@ -185,13 +183,43 @@ We want our rows to have a certain height, so we will use the rowHeight option. 
 
 ![Gallery with JS](./5-with-js.png "Gallery with JS")
 
-Excellent! See how easy it is to make use of a plugin? We're almost there now. We're missing only one thing. We you click on an image, nothing will happen at the moment but we want our image to "pop up" and display a bigger image, so our visitors can take a closer look at our work.
+Excellent! See how easy it is to make use of a plugin? We're almost there now. We're missing only one thing. We you click on an image, the image will open up in a new page but we want our image to "pop up" and display a bigger image on the same page, so our visitors can take a closer look at our work without leaving their place.
 
 #Initializing the Swipebox plugin
+We want to give users the option to click on the image and then having a bigger "pop up". The Swipebox plugin gives us just that functionality and works very well with the JustifiedGallery plugin. Looking at the documentation for the JustifiedGallery plugin, there is even an [example](http://miromannino.github.io/Justified-Gallery/lightboxes/) on how to achieve this. 
 
+We need to be sure that all photos from the JustifiedGallery have loaded before we call the Swipebox plugin. Luckily for us, the JustifiedGallery provides events that trigger at certain times of the life cycle of the plugin. One of these events is the **jg.complete** event. When it is triggered, it is the perfect time to initialize the Swipebox plugin.
 
+An example of using an event is here:
+```
+    $('#my_gallery').justifiedGallery({
+      our_params: 'are here'
+    }).on('jg.complete', function () {
+          alert('the gallery is complete');
+      });
+```
 
+> [action]
+> Initialize the Swipebox plugin by replacing the alert function with the **swipebox** function. You need to first select the a tag that is around an image with the selector `$('#gallery a')` and then use the function on it just as we did with the justifiedGallery function. The Swipebox library also accepts parameters to do various things, you can see the [docs here](http://brutaldesign.github.io/swipebox/#options). 
 
+![Swipebox plugin](./7-swipebox.gif "Swipebox plugin")
 
+> [solution]
+> We thought the controls of Swipebox were disappearing too quickly because the default setting is 3 seconds (3000 milliseconds), and instead passed false to **hideBarsDelay** as we don't want the controls to disappear at all. 
+> ```
+>    $( document ).ready(function() {
+>      $("#gallery").justifiedGallery({
+>        rowHeight : 200,
+>        lastRow : 'justify',
+>        margins : 3,
+>        randomize: true
+>      }).on('jg.complete', function () {
+>          $('#gallery a').swipebox({
+>            hideBarsDelay : false
+>          });
+>      });
+>    });
+`
+> ```
 
-
+And there you have it, a beautiful modern gallery to showcase your work! This is where any potential employers might come to see what you have done so far. But how are they going to contact you if they liked your work? Well that is the question we answer in the next part when we build a "Contact Me" form.
