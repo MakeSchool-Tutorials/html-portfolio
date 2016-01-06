@@ -9,7 +9,7 @@ Once we're done we'll have a page like the one below, that is resizable and allo
 ![Cat Gallery](./3-gallery.gif "Cat Gallery")
 
 #Creating the HTML gallery page
-Before we dive in to using the PhotoSwipe plugin, we need to create an empty HTML page that will contain the library. We want to make the page look consistent with our first page, so let's reuse some of the styles and add the same header to our gallery page.
+Before we dive in to using the jQuery plugins, we need to create an empty HTML page that will contain the library. We want to make the page look consistent with our first page, so let's reuse some of the styles and add the same header to our gallery page.
 
 > [action]
 > Create a new HTML page called gallery.html. Add to it the content of the HTML page from our index.html page but remove everything except the header and the script tags. You can change the content of the title tag to "your_name Gallery".
@@ -40,7 +40,7 @@ Your page should now look like this:
 >                </nav>
 >            </header>
 >    
->            <script src="./js/vendor/jquery-1.11.3.min.js"></script>
+>            <script src="./js/vendor/jquery-2.1.4.min.js"></script>
 >            <script src="./js/portfolio.js"></script>
 >        </body>
 >    </html>
@@ -49,7 +49,7 @@ Your page should now look like this:
 #Downloading a plugin
 Now that we have our empty gallery page, let's download a couple of plugins, the JustifyGallery and the Swipebox libraries. A plugin is an extension of an existing software, in this case the jQuery library.
 
-The instructions for how to use both libraries are well explained, so let's follow them. The libraries have a bit more content than the jQuery library. Apart from the JS file, they also have a CSS file and images. 
+The instructions for how to use both libraries are well explained, so let's follow them. The libraries have a bit more content when you download them than the jQuery library. Apart from the JS file, they also have a CSS file and images. 
 
 > [action]
 > Go to [JustifyGalllery](http://miromannino.github.io/Justified-Gallery/) and download the latest release. Unzip the folder and move the whole folder "as is" into the vendor folder. 
@@ -94,11 +94,11 @@ Now that we have the two plugins in our project, let's connect them to our HTML 
 Now that the files are connected, we need to add some HTML first, so the library can take the images and arrange them in a nice grid. 
 
 > [action]
-> Add a new section tag after the header tag with the class *gallery-container*. Inside of it, we should add a h2 tag to properly announce our gallery. We named ours "Kitty's Gallery". What will you name yours? 
+> Add a new section tag after the header tag with the class *gallery-container*. Inside of it, we should add a *h2* tag to properly announce our gallery. We named ours "Kitty's Gallery". What will you name yours? 
 > 
-> Inside the section tag, we will add a div with the class *gallery*. Inside of it, we will add a bunch of *a* tags. Each a tag will contain an img tag that will contain a thumbnail of the image we want to show. These requirements are determined by the library and well documented [here](http://miromannino.github.io/Justified-Gallery/getting-started/).
+> Inside the section tag, we will add a div with the class *gallery*. Inside of it, we will add a bunch of *a* tags. Each a tag will contain an *img* tag that will contain a thumbnail of the image we want to show. These requirements are determined by the library and well documented [here](http://miromannino.github.io/Justified-Gallery/getting-started/).
 >
-> Add a title attribute to the a tag and an alt attribute to the img tag. The href attribute for the a tag needs to link to the image you want to display and the src attribute of the img tag needs to link to the same image or a smaller version of the image (a thumbnail).
+> Add a title attribute to the a tag and an alt attribute to the *img* tag. The *href* attribute for the a tag needs to link to the image you want to display and the *src* attribute of the *img* tag needs to link to the same image or a smaller version of the image (a thumbnail).
 > 
 > Example snippet:
 > ```
@@ -107,7 +107,7 @@ Now that the files are connected, we need to add some HTML first, so the library
 >    </a>
 > ```
 
-<!-- Comment to break actionable boxes. -->
+![Gallery without JS](./4-without-js.png "Gallery without JS")
 
 > [solution]
 > ```
@@ -143,9 +143,7 @@ Now that the files are connected, we need to add some HTML first, so the library
 >    </section>
 > ```
 
-Now that we have the HTML part of the gallery up, you should see the images in very big sizes. Instead of filling the page nicely, it shows the expanded images and has a lot of white space. Let's take care of that with some simple JavaScript.
-
-![Gallery without JS](./4-without-js.png "Gallery without JS")
+Now that we have the HTML part of the gallery up, you should see the images in their original sizes. Instead of filling the page nicely, it shows the expanded images and has a lot of white space. Let's take care of that with some simple JavaScript.
 
 #Adding JavaScript to the mix
 You will be surprised how little JavaScript we will need to make the gallery look as elegant as in the gif above. All with the help of our plugins. Let's add the magic in our portfolio.js file. 
@@ -159,7 +157,7 @@ If you reload the page now, it should look like this:
 
 ![Gallery without Parameters](./5-without-params.png "Gallery without Parameters")
 
-Now that is lots better of course but the pictures are still not very nicely distributed. All images are in a row and visible but we want our work presented in bigger thumbnails and fill up the whitespace. This is where parameter come in. The library supports a number of parameters, which we can make use of. You can find all of them [here](http://miromannino.github.io/Justified-Gallery/options-and-events/).
+Now that is lots better of course but the pictures are still not very nicely distributed. All images are in a row and visible but we want our work presented in bigger thumbnails and fill up the whitespace. This is where parameters come in. The library supports a number of parameters, which we can make use of. You can find all of them [here](http://miromannino.github.io/Justified-Gallery/options-and-events/).
 
 We want our rows to have a certain height, so we will use the rowHeight option. We also want a bigger margin between the images and randomize the images each time they load, so that the gallery is never the same layout. There's also the option to justify the last row. This means that all images on the last row will take up the available space as opposed to have them align to the left. This will be nice to get a grid like layout. 
 
@@ -181,12 +179,12 @@ We want our rows to have a certain height, so we will use the rowHeight option. 
 >    });
 > ```
 
-![Gallery with JS](./5-with-js.png "Gallery with JS")
+![Gallery with JS](./6-with-js.png "Gallery with JS")
 
-Excellent! See how easy it is to make use of a plugin? We're almost there now. We're missing only one thing. We you click on an image, the image will open up in a new page but we want our image to "pop up" and display a bigger image on the same page, so our visitors can take a closer look at our work without leaving their place.
+Excellent! See how easy it is to make use of a plugin? We're almost there now. We're missing only one thing. We you click on an image, the image will open up in a new page but we want our image to "pop up" and display a bigger image on the same page, so our visitors can take a closer look at our work without losing their place.
 
 #Initializing the Swipebox plugin
-We want to give users the option to click on the image and then having a bigger "pop up". The Swipebox plugin gives us just that functionality and works very well with the JustifiedGallery plugin. Looking at the documentation for the JustifiedGallery plugin, there is even an [example](http://miromannino.github.io/Justified-Gallery/lightboxes/) on how to achieve this. 
+We want to give users the option to click on the image and then having a bigger "pop up". The Swipebox plugin gives us just that functionality and works very well with the JustifiedGallery plugin. Looking at the documentation for the JustifiedGallery plugin, there is even an [example](http://miromannino.github.io/Justified-Gallery/lightboxes/) on how to achieve this but we'll also explain it here. 
 
 We need to be sure that all photos from the JustifiedGallery have loaded before we call the Swipebox plugin. Luckily for us, the JustifiedGallery provides events that trigger at certain times of the life cycle of the plugin. One of these events is the **jg.complete** event. When it is triggered, it is the perfect time to initialize the Swipebox plugin.
 
@@ -200,7 +198,7 @@ An example of using an event is here:
 ```
 
 > [action]
-> Initialize the Swipebox plugin by replacing the alert function with the **swipebox** function. You need to first select the a tag that is around an image with the selector `$('#gallery a')` and then use the function on it just as we did with the justifiedGallery function. The Swipebox library also accepts parameters to do various things, you can see the [docs here](http://brutaldesign.github.io/swipebox/#options). 
+> Initialize the Swipebox plugin by replacing the alert function with the **swipebox** function. You need to first select the *a* tag that is around an image with the selector `$('#gallery a')` and then use the function on it just as we did with the justifiedGallery function. The Swipebox library also accepts parameters to do various things, you can see the [docs here](http://brutaldesign.github.io/swipebox/#options). 
 
 ![Swipebox plugin](./7-swipebox.gif "Swipebox plugin")
 
