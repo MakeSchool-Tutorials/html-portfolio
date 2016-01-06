@@ -129,7 +129,8 @@ We haven't created any pages yet but we will add the href already now as we will
 Before adding the middle section, let's focus on the bottom as it has only two additions to the page. 
 
 > [action]
-> The bottom section will contain the title for the bottom section and the "Download My CV" button. Try coming up with a structure for the footer.
+> The bottom section will contain the title for the bottom section and the "Download My CV" button (using an a tag). Try coming up with a structure for the footer.
+> Add your CV (as .pdf file) to the root folder. Use the href attribute of the a tag to link to your cv (something like `href="./cv.pdf"`) and the HTML5 attribute **download** to give your file a name (`download="Kitty's CV"`). The download attribute is used to give the CV a name. 
 
 <!-- Comment to break up actionable boxes. -->
 
@@ -138,7 +139,7 @@ Before adding the middle section, let's focus on the bottom as it has only two a
 >```
 >    <footer>
 >        <h3>About</h3>
->        <div>Download My CV</div>
+>        <a href="./cv.pdf" download="Kitty's CV">Download My CV</a>
 >    </footer>
 >```
 
@@ -194,7 +195,7 @@ Now that we have all of our content there, you can see that it is in dire need o
 >    
 >            <footer>
 >                <h3>About</h3>
->                <div>Download My CV</div>
+>                <a href="./cv.pdf" download="Kitty's CV">Download My CV</a>
 >            </footer>
 >        </body>
 >    </html>

@@ -150,7 +150,7 @@ As the footer has only two items that need styling, let's transform it before th
 > ```
 >    <footer>
 >        <h3 class="footer-sub title">About</h3>
->        <div>Download My CV</div>
+>        <a href="./cv.pdf" download="Kitty's CV">Download My CV</a>
 >    </footer>
 > ```
 > In the CSS file:
@@ -179,7 +179,7 @@ Let's focus our attention on the button instead. First we need to give the butto
 > [solution]
 > You want to add a class to the HTML div:
 > ```
->    <div class="button">Download My CV</div>
+>    <a href="./cv.pdf" download="Kitty's CV" class="button">Download My CV</a>
 > ```
 > And then we add the following rules to the class and use the pseudo selector :hover.
 > ```
@@ -265,7 +265,7 @@ Once you have had some time adding CSS properties to your page, make sure the pa
 >    
 >      <footer>
 >          <h3 class="footer-sub title">About</h3>
->          <div class="button">Download My CV</div>
+>          <a href="./cv.pdf" download="Kitty's CV" class="button">Download My CV</a>
 >      </footer>
 >    </body>
 > ```
