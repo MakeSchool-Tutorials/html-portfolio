@@ -21,7 +21,7 @@ Once you're logged in, we will create a new repository.
 <!-- Comment to break actionable boxes. -->
 
 > [action]
-> Name the repository *your_github_username.github.io*. Give it a meaningful description and click the "Create repository" button.
+> Name the repository *your_github_username.github.io*. Give it a meaningful description and click the "Create repository" button. **It's important to use your Github username and add the github.io, otherwise it won't work!**
 > 
 > ![Name new repo](./2-name-repo.png "Name new repo")
 
