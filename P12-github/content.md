@@ -8,7 +8,7 @@ You probably already know Github, which is a web-based Git repository hosting se
 
 We need to create a repo now and name it your_github_username.github.io, which will automatically make it accessible through the URL *your_github_username.github.io*. So let's go ahead and do this together.
 
-#Creating a github repo
+#Creating a Github repo
 Go to [Github](https://github.com) and login if you have an account. If you don't have an account, sign up for Github. It is a very useful account to have. 
 
 Once you're logged in, we will create a new repository.
@@ -23,12 +23,12 @@ Once you're logged in, we will create a new repository.
 > [action]
 > Name the repository *your_github_username.github.io*. Give it a meaningful description and click the "Create repository" button.
 > 
-> ![Name new repo](./1-name-repo.png "Name new repo")
+> ![Name new repo](./2-name-repo.png "Name new repo")
 
 Now that we have created a new repository, we need to pull this repository down onto our local machine.
 
 > [action]
-> Open your terminal and navigate to a directory where you already have your portfolio folder. Type the following command:
+> Open your terminal and navigate to the directory where you already have your portfolio folder. Type the following command:
 > 
 > `git clone https://github.com/your_github_username/your_github_username.github.io.git`
 > 
@@ -56,9 +56,10 @@ Go back to your terminal and navigate to your new repo. You can change directori
 
 When you hit enter on the last command, you will be prompted to enter your Github username and Github password before the files will be pushed up.
 
-Now that we have all of our files up on Github, all we need to do is go to our URL **your_github_username.github.io** and look at our brand new portfolio website!
+Now that we have all of our files up on Github, all we need to do is go to our URL **your_github_username.github.io** and look at our brand new portfolio website! We are almost done now but we still need to activate the Formspree service. 
 
-We are almost done now, let's just quickly go to our form on the **Contact Me** page and submit our first email. Once you have clicked "Send", you need to go to your email account where you should have received an email from Formspree asking you to confirm that you want in fact receive emails from this form. 
+> [action]
+> Go to our form on the **Contact Me** page and submit your first email. Once you have clicked "Send", you need to go to your email account where you should have received an email from Formspree asking you to confirm that you want in fact receive emails from this form. 
 
 ![Formspree confirmation email](./3-confirm-email.png "Formspree confirmation email")
 
