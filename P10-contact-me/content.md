@@ -60,7 +60,7 @@ Now we are ready to begin in earnest. Let's add some form elements to our page.
 We haven't introduced these elements yet but HTML has special elements for forms, which are called input elements. The most prominent are:
 
 - **form** - which wraps the form. All data inside the form will be submitted.
-- **input** - the element that can be a checkbox, radio button or text field depending on the *type* that is used. Popular [types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) (`type="text"`):
+- **input** - the element that can be a checkbox, radio button or text field depending on the *type* that is used (like this in HTML: `type="text"`). Popular [types](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) are:
     - *checkbox* - makes a checkbox
     - *radio* - makes a radiobutton
     - *text* - makes a text field on a single line
@@ -94,7 +94,7 @@ Those elements are enough to get us started for now as we will have quite a simp
 Yeah, the form is not very pretty yet but we will make it look better in a few minutes. Before we move to styling the form, let's add placeholders and make the textarea a bit bigger. The placeholder attribute can be added to any input or textarea tag that has a text field. It's added like this: `placeholder="Put something meaningful here"` as an attribute to the tag. The textarea tag also takes the attributes rows and cols, which control how many rows and columns should be shown by default. 
 
 > [action]
-> Add a placeholder to the email input and the textarea. Add cols and rows to the textarea tag and play around with the numbers. Start with 5 for each and see what that does. We can also make use of the **required** attribute. It takes no value but when it is added to the input element, the browser validates that the input element has a value.
+> Add a placeholder to the email input and the textarea. Add cols and rows to the textarea tag and play around with the numbers. Start with 5 for each and see what that does. We can also make use of the **required** attribute. It takes no value but when it is added to the input element, the browser validates that the input element has a value and is not empty.
 
 <!-- Comment to break actionable boxes. -->
 
@@ -108,7 +108,7 @@ Yeah, the form is not very pretty yet but we will make it look better in a few m
 One thing that is very easy to fix for us and that we already have the classes for is the order of the form. Instead of having everything in a row, we want the form to be in a column like structure. Any idea which classes I mean? Yes, **flex** of course!
 
 > [action]
-> Add the *flex* and *column* class to the form. We also already have classes for the title. Add *title* and *sub* to the h2 tag.
+> Add the *flex* and *column* class to the form. We also have classes for the title already. Add *title* and *sub* to the h2 tag.
 
 With those small additions, we already have a better looking form but overall the form is still quite squashed. Let's add the button class to our button.
 
@@ -139,14 +139,14 @@ Let's remove the squashiness of the form by adding some margin and padding to th
 
 > [action]
 > Add a class to the input and textarea elements. Play with the following properties in the inspector to see what they do and what values they offer:
-> - width - sets the width of the element, best set in percentage, so it resizes
-> - max-width - sets the maximum width of an element, great to prevent elements to become too big on bigger screens
+> - width - sets the width of the element, best set in percentage, so it resizes dynamically with the page
+> - max-width - sets the maximum width of an element, great to prevent elements to become too big on bigger displays
 > - margin
 > - line-height - controls the height of text, use the value **em** instead of **px**
 > - padding
 > - font-size - use **em** here too
 > - border-radius - try a small pixel value and see what this does to the edges to your input elements
-> - border - you can set a border with the shorthand *1px sold black* or you can remove the border with *none*
+> - border - you can set a border with the shorthand *1px sold black* or you can remove the border completely with the value *none*
 
 <!-- Comment to break actionable boxes. -->
 
@@ -172,4 +172,4 @@ Let's remove the squashiness of the form by adding some margin and padding to th
 >    }
 > ```
 
-Now that we have our beautiful form, lets connect to the Formspree service, so visitors can send you an email. 
+Now that we have our beautiful form, lets connect it to the Formspree service, so visitors can send you an email. 

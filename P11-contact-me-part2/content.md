@@ -4,21 +4,9 @@ slug: contact-me-2
 ---     
 
 #Using the Formspree.io service
-One of the drawbacks of a static page is that you don't have a server that can take your form elements and then send it to your email. Unfortunately this is not possible in JavaScript for security reasons. Suppose there is a feature in JavaScript to send email. Some malicious coder can write a script to send email to some address immediately when you visit their page. This will reveal your email address to some third party without your knowledge. They will start filling your mail box with lots of spam messages!
+One of the drawbacks of a static page is that you don't have a server that can take your form elements and then send it to your email. Unfortunately this is not possible in JavaScript natively for security reasons. Suppose there is a feature in JavaScript to send email. Some malicious coder can write a script to send email to some address immediately when you visit their page. This will reveal your email address to some third party without your knowledge. They will start filling your mail box with lots of spam messages!
 
 As it is out of the scope for this tutorial to build a server, we will make use of the Formspree service. Looking on their [website](http://formspree.io/) you can see that setting up their service is super straightforward.
-
-All we need to do is add a few more attributes to our form. The main two attributes are on the form tag. We need a **method** attribute, which takes the value **POST**. This means that we want our form to *post* all the values inside of it to somewhere. Somewhere can be declared with the **action** attribute. The value is a URL declared by Formspree, which ends with our email address. However, if we do this, we have to provide a *thank you* page or our visitor will automatically be redirected to Formspree's thank you page. That means our visitor will leave our website, which we don't want! We will deal with how to avoid this in a few minutes.
-
-> [action]
-> Add the *method* attribute to your form tag.
-
-<!-- Comment to break actionable boxes. -->
-
-> [solution]
-> ```
->    <form class="flex column" method="POST">
-> ```
 
 Looking over the [documentation](http://formspree.io/), there are quite a few input elements provided by Formspree that will help us with creating a better form and also avoid being spammed by bots!
 
@@ -30,7 +18,7 @@ Looking over the [documentation](http://formspree.io/), there are quite a few in
 > [solution]
 > We added the following hidden input fields and name attribute (to the email input) to our form:
 > ```
->    <form class="flex column" method="POST">
+>    <form class="flex column">
 >                    
 >      <input class="input-field" type="email" placeholder="Your Email" required name="_replyto" />
 >      <textarea class="input-field" rows="10" cols="20" placeholder="Write me something nice!" required></textarea>
@@ -68,7 +56,9 @@ We will write this JavaScript into the empty ready function in *contact.js*. Fir
 >    });
 > ```
 
-Now that we have the function triggering when the button is clicked, we want to get access to the data and submit it to Formspree. First we need to take care of the button submitting the form before we have gotten the data. JavaScript has the **preventDefault** function for that. It will prevent the default behavior for events. 
+Now that we have the function triggering when the button is clicked, we want to get access to the data and submit it to Formspree using JavaScript. If we submitted directly via the HTML, we have to provide a *thank you* page or our visitor will automatically be redirected to Formspree's thank you page. That means our visitor will leave our website, which we don't want! We will deal with how to avoid this in a few minutes.
+
+First we need to take care of the button submitting the form before we have gotten the data. JavaScript has the **preventDefault** function for that. It will prevent the default behavior for events. 
 
 > [action]
 > Call the **preventDefault** function on the passed in event parameter.
@@ -83,12 +73,23 @@ Looking at the Formspree documentation, there is an example on how to post data 
 > [info]
 > **What is AJAX?**
 > 
-> Ajax is a client-side script that communicates to and from a server/database without the need for a postback or a complete page refresh. The best definition I've read for Ajax is "the method of exchanging data with a server, and updating parts of a web page - without reloading the entire page".
+> Ajax is a client-side script that communicates to and from a server/database without the need for a postback or a complete page refresh. The best definition I've read for Ajax is "the method of exchanging data with a server, and updating parts of a web page - without reloading the entire page". 
+> There is of course an answer to this on [Stackoverflow](http://stackoverflow.com/questions/1510011/how-does-ajax-work).
 
-We can just copy and paste the suggested [ajax](https://api.jquery.com/jQuery.ajax/) function. The **ajax** function is part of the jQuery library and as we have the library already included, we can just go ahead and use it. We need to change the url to our email address. There is of course an answer to this on [Stackoverflow](http://stackoverflow.com/questions/1510011/how-does-ajax-work).
+We can just copy and paste the suggested [ajax](https://api.jquery.com/jQuery.ajax/) function. The **ajax** function is part of the jQuery library and as we have the library already included, we can just go ahead and use it. We need to change the url to our email address. 
 
 > [action]
-> Copy and paste the jQuery ajax function from the [Formspree documentation](http://formspree.io/). Amend the email address to your own. The parameters we're passing are method, which we explained earlier. The parameter **data** will contain the data from our form and the **dataType** is set to JSON.
+> Copy and paste the jQuery ajax function from the [Formspree documentation](http://formspree.io/). Amend the email address to your own. The parameters we're passing are method, data and dataType. The **method** parameter takes the value **POST**. This means that we want our form to *post* all the values inside of it to somewhere. Somewhere can be declared with the **action** attribute. The value is the URL declared by Formspree, which ends with our email address. The parameter **data** will contain the data from our form and the **dataType** is set to JSON.
+
+> [action]
+> Add the *method* attribute to your form tag.
+
+<!-- Comment to break actionable boxes. -->
+
+> [solution]
+> ```
+>    <form class="flex column" method="POST">
+> ```
 
 Now we should get the content of our form and replace the data parameter with our own content. We can do this by getting the elements of the page and using the jQuery [val](https://api.jquery.com/val/) function.
 
