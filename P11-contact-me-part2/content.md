@@ -81,16 +81,6 @@ We can just copy and paste the suggested [ajax](https://api.jquery.com/jQuery.aj
 > [action]
 > Copy and paste the jQuery ajax function from the [Formspree documentation](http://formspree.io/). Amend the email address to your own. The parameters we're passing are method, data and dataType. The **method** parameter takes the value **POST**. This means that we want our form to *post* all the values inside of it to somewhere. Somewhere can be declared with the **action** attribute. The value is the URL declared by Formspree, which ends with our email address. The parameter **data** will contain the data from our form and the **dataType** is set to JSON.
 
-> [action]
-> Add the *method* attribute to your form tag.
-
-<!-- Comment to break actionable boxes. -->
-
-> [solution]
-> ```
->    <form class="flex column" method="POST">
-> ```
-
 Now we should get the content of our form and replace the data parameter with our own content. We can do this by getting the elements of the page and using the jQuery [val](https://api.jquery.com/val/) function.
 
 > [action]
@@ -99,6 +89,12 @@ Now we should get the content of our form and replace the data parameter with ou
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
+> We added the email class and message class to the respective elements:
+> ```
+>    <input class="email input-field" type="email" placeholder="Your Email" name="_replyto" required />
+>    <textarea class="message input-field" rows="10" cols="20" placeholder="Write me something nice!" required></textarea>
+> ```
+> And the JS so far:
 > ```
 >    $.ajax({
 >        url: "http://formspree.io/kitty@makeschool.com", 
