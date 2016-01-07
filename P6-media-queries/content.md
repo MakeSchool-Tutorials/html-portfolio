@@ -186,4 +186,4 @@ This is going to be easy as well already know how to use media queries for vario
 >    }
 > ```
 
-And now we have an almost fully responsive site! Nice work! Let's add one tiny thing to make the site on mobile look even better. 
+And now we have an almost fully responsive site! Nice work! Now let's expand our content and add some more pages to our website in the next part.
