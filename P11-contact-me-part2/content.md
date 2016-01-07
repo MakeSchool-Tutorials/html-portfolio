@@ -76,7 +76,7 @@ Looking at the Formspree documentation, there is an example on how to post data 
 > Ajax is a client-side script that communicates to and from a server/database without the need for a postback or a complete page refresh. The best definition I've read for Ajax is "the method of exchanging data with a server, and updating parts of a web page - without reloading the entire page". 
 > There is of course an answer to this on [Stackoverflow](http://stackoverflow.com/questions/1510011/how-does-ajax-work).
 
-We can just copy and paste the suggested [ajax](https://api.jquery.com/jQuery.ajax/) function. The **ajax** function is part of the jQuery library and as we have the library already included, we can just go ahead and use it. We need to change the url to our email address. 
+We can just copy and paste the suggested [ajax](https://api.jquery.com/jQuery.ajax/) function. The **ajax** function is part of the jQuery library and as we have the library already included, we can just go ahead and use it. We need to change the URL to our email address. 
 
 > [action]
 > Copy and paste the jQuery ajax function from the [Formspree documentation](http://formspree.io/). Amend the email address to your own. The parameters we're passing are method, data and dataType. The **method** parameter takes the value **POST**. This means that we want our form to *post* all the values inside of it to somewhere. Somewhere can be declared with the **action** attribute. The value is the URL declared by Formspree, which ends with our email address. The parameter **data** will contain the data from our form and the **dataType** is set to JSON.
@@ -126,7 +126,9 @@ The *success* function also takes 3 parameters:
 Each function is called depending on the response from Formspree. If there is an error in the response, then the error function will be called. If the request responds with success, then the success function will be called.
 
 > [action]
-> Add the error and success functions to your AJAX call. Add an alert function into each one with a descriptive message. Try submitting your form afterwards.
+> Add the error and success functions to your AJAX call. Add an alert function into each one with a descriptive message. 
+> Let's also remove our form data on success by resetting the values to empty strings. Select the form using jQuery and then use the [find](https://api.jquery.com/find/) function to select the email and message class. Chain the **val** function at the end passing it an empty string. This will set the selected elements to empty strings, effectively clearing our content. 
+> Try submitting your form afterwards.
 
 ![Error on submit](./5-error-on-submit.png "Error on submit")
 
@@ -150,6 +152,7 @@ Each function is called depending on the response from Formspree. If there is an
 >                alert('Uh oh, something went wrong. Please try again.');
 >            }). success(function(data, status) {
 >                alert('Thank you for your message. Kitty will get back to you soon.');
+>                $('form').find('.email, .message').val('');
 >            });
 >        });
 >        
