@@ -14,7 +14,7 @@ Our complete portfolio will look like this on desktop & mobile:
 
 ![Portfolio on desktop and mobile](./1-portfolio-desktop.png "Portfolio on desktop and mobile")
 
-You can also see a full working version at http://kitty-makeschool.github.io - go ahead and play with it to see what we will achieve by the end of the tutorial.
+You can also see a full working version at [http://kitty-makeschool.github.io](http://kitty-makeschool.github.io) - go ahead and play with it to see what we will achieve by the end of the tutorial.
 
 #Languages We'll Use
 We are going to use HTML, CSS and JavaScript to create this site and host it on Github Pages, which will allow other people to access the site. 
