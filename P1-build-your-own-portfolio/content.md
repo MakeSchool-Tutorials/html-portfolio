@@ -170,10 +170,9 @@ When you have finished adding your content to the page, refresh the browser and 
 
 ![Portfolio without CSS](./4-content-without-style.png "Portfolio without CSS")
 
-Now that we have all of our content there, you can see that it is in dire need of some styling. We want to make sure that our styling looks good on mobile as well as desktop, so we will style it with resizability in mind.
-
+The entire HTML file should look like this now:
 > [solution]
-> The entire HTML file should look like this now:
+> 
 >```
 >    <html>
 >        <head>
@@ -205,4 +204,8 @@ Now that we have all of our content there, you can see that it is in dire need o
 >        </body>
 >    </html>
 >```
+
+Now that we have all of our content there, you can see that it is in dire need of some styling. We want to make sure that our styling looks good on mobile as well as desktop, so we will style it with resizability in mind.
+
+
     
