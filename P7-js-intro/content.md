@@ -52,6 +52,7 @@ There are some debates on this (of course!). Just like the CSS can be declared i
 The old way to do this used to be the same way we did with our CSS files. You would add the **link** tag inside the head tag and it would load in the JavaScript file. 
 
 An example of this:
+
 ```
     <head>
         <title>Make School's Portfolio</title>
@@ -59,6 +60,7 @@ An example of this:
         <script src="./js/portfolio.js"></script>
     </head>
 ``` 
+
 Now, this is where the debate lies. The browser renders a web page from top to bottom, so it will start with loading the CSS file, then load the JavaScript file and then it will render the rest of the HTML content. The problem is that if it takes a long time to load the JavaScript, then the rest of the page will not render until the JavaScript has finished loading. Remember that your visitors might not wait around until the page is loaded and go elsewhere. 
 
 Most of the time you don't need the JavaScript as soon as the page is loaded as most of your content will most likely be written in HTML. So why load the JavaScript in before the HTML? Well exactly, we don't need that. If you've had a look at the HTML5 Boilerplate, you will have seen that the latest "best practice" is to load the JavaScript inside the body tag, just before it closes. This ensures that the HTML can render and your visitor sees something happening before it starts loading in the JavaScript.
@@ -82,6 +84,7 @@ Now let's add our script tags to the page.
 
 > [solution]
 > The HTML should look like this:
+> 
 >```
 >            ...
 >
@@ -100,6 +103,7 @@ Now that the files are connected, let's test that we didn't make any mistakes. W
 
 > [action]
 > Add the following JavaScript into your portfolio.js file:
+> 
 > ```
 >    $( document ).ready(function() {
 >      alert('hello');
@@ -118,6 +122,7 @@ The ready function is used to execute any code when the page is loaded for the f
 > **Alert in vanilla JS**
 > 
 > Just for comparison, the above function would look like this in vanilla JS:
+> 
 > ```
 >    document.onreadystatechange = function () {
 >        if (document.readyState == "complete") {

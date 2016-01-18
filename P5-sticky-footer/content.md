@@ -13,6 +13,7 @@ One thing we're still missing from the footer is those lines next to "About". We
 
 > [solution]
 > The HTML:
+> 
 > ```
 >    <footer class="footer">
 >        <div>
@@ -24,6 +25,7 @@ One thing we're still missing from the footer is those lines next to "About". We
 >    </footer>
 > ```
 > The CSS so far:
+> 
 > ```
 >    .footer {
 >      text-align: center;
@@ -46,6 +48,7 @@ I hope your answer was flexbox! Because then you are quite right. Remember how w
 
 > [solution]
 > The CSS:
+> 
 > ```
 >    .footer {
 >      text-align: center;
@@ -67,6 +70,7 @@ We will make use of the new css viewport units, which allows us to calculate the
 
 > [action]
 > Add a div around the entire content except the footer tag. Then add a class to it and add the following rule to the class:
+> 
 > ```
 >      min-height: calc(100vh - 126px);
 > ```
@@ -77,6 +81,7 @@ We will make use of the new css viewport units, which allows us to calculate the
 > Adding the above rule to the class *main-wrapper* will calculate the view height (**vh**) and subtract the height of the footer from it. This will always push the footer just below any other content that is on the page.
 >
 > The HTML should be like this:
+> 
 > ```
 >    <body class="default">             
 >      <div class="main-wrapper">
@@ -124,13 +129,16 @@ Let's move the titles up, so that we get to see the footer. This is easily done 
 
 > [solution]
 > In HTML:
+> 
 > ```
 >    <div class="titles flex column">
 >        <h1 class="main title ">Hello I'm Kitty</h1>
 >        <h2 class="sub title">I love creating code</h2>
 >    </div>
 > ```
+> 
 > And in CSS:
+> 
 > ```
 >    .titles {
 >      margin-top: -22%;
@@ -146,12 +154,15 @@ Last but not least, let's make the image smaller. Ideally it takes up the center
 
 > [solution]
 > In HTML: 
+> 
 > ```
 >    <div class="img-wrapper">
 >        <img class="main-img circle" src="http://placekitten.com/g/600/600" />
 >    </div>
 > ```
+> 
 > And in CSS:
+> 
 > ```
 >    .img-wrapper {
 >      width: 60%;
@@ -164,6 +175,7 @@ And there you have it, a portfolio page where everything is perfectly in place!
 
 > [solution]
 > If we lost you somewhere, here's the current HTML file:
+> 
 > ```
 >    <html>
 >      <head>
@@ -212,7 +224,9 @@ And there you have it, a portfolio page where everything is perfectly in place!
 >      </body>
 >    </html>
 >```
+>
 > And our CSS file so far:
+> 
 > ```
 >    * {
 >      margin: 0;

@@ -31,10 +31,12 @@ Now that we have some basic styling, let's get everything into place! We also wa
 
 > [solution]
 > It should be something like this in the HTML:
+> 
 > ```
 >    <img class="circle" src="http://placekitten.com/g/600/600" />
 > ```
 > And the CSS is as simple as:
+> 
 > ```
 >    .circle {
 >      border-radius: 50%;
@@ -48,6 +50,7 @@ The flexbox concept might be a bit of beast to wrap your head around, so let's g
 
 > [action]
 > Make a class called flex in your CSS file and then add the class to the new div tag around the section and the footer. Add the following rules to the flex class in your CSS:
+> 
 > ```
 >    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
 >    display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -67,6 +70,7 @@ If you now reload the browser, you should see that the content moved but didn't 
 
 > [solution]
 > Your flex class should look like this
+> 
 > ```
 >    .flex {
 >      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -84,6 +88,7 @@ The content is now back into the correct order but our image is all squashed and
 
 > [action] 
 > Add this rule to your flex class: 
+> 
 > ```
 >    align-items: center;
 > ```
@@ -112,6 +117,7 @@ Now, let's move the content into the correct place vertically. We want the logo 
 
 > [solution]
 > You should have something like the following rules in your CSS:
+> 
 > ```
 >    .header {
 >      border-top: solid 8px #019cdb; 
@@ -123,6 +129,7 @@ Now, let's move the content into the correct place vertically. We want the logo 
 >    }
 > ```
 > And your HTML should have a new class on the image:
+> 
 > ```
 >    <img class="main-img circle" src="http://placekitten.com/g/600/600" />
 > ```
@@ -139,10 +146,12 @@ Oops! Our logo is hidden behind the circular image. This has to do with how our 
 
 > [solution]
 > The HTML should be:
+> 
 > ```
 >    <img class="logo" src="https://goo.gl/RG3GtK" />
 > ```
 > And the CSS is as simple as:
+> 
 > ```
 >    .logo {
 >      z-index: 2;

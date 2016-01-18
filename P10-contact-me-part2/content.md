@@ -17,6 +17,7 @@ Looking over the [documentation](http://formspree.io/), there are quite a few in
 
 > [solution]
 > We added the following hidden input fields and name attribute (to the email input) to our form:
+> 
 > ```
 >    <form class="flex column">
 >                    
@@ -30,6 +31,7 @@ Looking over the [documentation](http://formspree.io/), there are quite a few in
 > 
 >    </form>
 > ```
+> 
 > Hidden input elements are hidden to the user of the form but are useful additions for the owner of the form. They can add things like the honeypot for spambots for example.
 
 If you have read the Formspree documentation, you know that we have to submit our form once ourselves. Then we will get an email, which we need to confirm (so that Formspree knows we really want those emails). Once we've done that, all subsequent forms will be send to our email. 
@@ -43,6 +45,7 @@ We will write this JavaScript into the empty ready function in *contact.js*. Fir
 > Select the form element with jQuery and call the [submit](https://api.jquery.com/submit/) function on it. The first parameter of the submit function is a callback function. The callback function has access to the *event* parameter. You can put an alert function into your callback function to test that your code will work when you click the button.
 > 
 > Example use of submit:
+> 
 > ```
 >    $('my_element').submit(function(event){ something will happen in here });
 > ```
@@ -50,6 +53,7 @@ We will write this JavaScript into the empty ready function in *contact.js*. Fir
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
+> 
 > ```
 >    $('form').submit(function(e) {
 >      alert('button was clicked');  
@@ -90,11 +94,14 @@ Now we should get the content of our form and replace the data parameter with ou
 
 > [solution]
 > We added the email class and message class to the respective elements:
+> 
 > ```
 >    <input class="email input-field" type="email" placeholder="Your Email" name="_replyto" required />
 >    <textarea class="message input-field" rows="10" cols="20" placeholder="Write me something nice!" required></textarea>
 > ```
+> 
 > And the JS so far:
+> 
 > ```
 >    $.ajax({
 >        url: "http://formspree.io/kitty@makeschool.com", 
@@ -110,6 +117,7 @@ Now we should get the content of our form and replace the data parameter with ou
 Ok, if we submit our form now, we will send the data and the form will clear. But what if something goes wrong? Clearing the form without a positive message to the user might also be confusing, so we should give user feedback on success and error of the AJAX request. Our *ajax* function offers two callback functions for this scenario, the **error** function and the **success** function. They are chained onto the *ajax* function and take a function as callback.
 
 The *error* function takes 3 parameters that come back from the request:
+
 ```
     .error(function(jqXHR, status, error){
         // Do something in here
@@ -117,6 +125,7 @@ The *error* function takes 3 parameters that come back from the request:
 ```
 
 The *success* function also takes 3 parameters:
+
 ```
     . success(function(data, status, jqXHR) {
         // Do something in here
@@ -134,6 +143,7 @@ Each function is called depending on the response from Formspree. If there is an
 
 > [solution]
 > The full contact.js file should look like this now: 
+> 
 > ```
 >    $( document ).ready(function() {
 >        

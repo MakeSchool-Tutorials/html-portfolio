@@ -45,6 +45,7 @@ One small thing we can take care of right away is making our image resizable and
 
 > [solution]
 > The CSS for main-img:
+> 
 > ```
 >    .main-img {
 >      margin-top: -54px;
@@ -64,6 +65,7 @@ When you resize the browser to a width that is smaller than its height, the font
 ![Height and width of browser](./3-height-width.png "Height and width of browser")
 
 > [solution]
+> 
 > ```
 >    @media (max-width: 481px) { 
 >      .main {
@@ -88,6 +90,7 @@ You can see that our font looks quite pleasant in devices below 480 pixels and o
 
 > [solution]
 > When adding the media queries, you'll notice that the media query for BP3 is unnecessary for our website as the font resizes nicely with our default style. We added only:
+> 
 > ```
 >    @media (max-width:767px) { 
 >      .main {
@@ -108,6 +111,7 @@ However, if you resize from a full width browser (of at least 1000 pixels) to 48
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
+> 
 > ```
 >    @media (min-width: 481px) and (max-width:767px) { 
 >      .main {
@@ -128,6 +132,7 @@ Now your media query should behave as expected again. But this doesn't solve the
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
+> 
 > ```
 >    @media (min-width: 481px) and (max-width:630px) { 
 >      .main {
@@ -160,6 +165,7 @@ This is going to be easy as well already know how to use media queries for vario
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
+> 
 > ```
 >    @media (max-width: 481px) { 
 >      ...

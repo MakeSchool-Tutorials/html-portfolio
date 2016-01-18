@@ -22,6 +22,7 @@ Just as before with the gallery page, we will repeat the process of creating a n
 
 > [solution]
 > The HTML file:
+> 
 > ```
 >    <html>
 >        <head>
@@ -47,7 +48,9 @@ Just as before with the gallery page, we will repeat the process of creating a n
 >        </body>
 >    </html>
 > ```
+> 
 > And our empty JS file:
+> 
 > ```
 >    $( document ).ready(function() {
 >      
@@ -80,6 +83,7 @@ Those elements are enough to get us started for now as we will have quite a simp
 
 > [solution]
 > The HTML in its simplest form:
+> 
 > ```
 >    <section>
 >        <h2>Contact Kitty</h2>
@@ -99,6 +103,7 @@ Yeah, the form is not very pretty yet but we will make it look better in a few m
 <!-- Comment to break actionable boxes. -->
 
 > [solution]
+> 
 > ```
 >    <input type="email" placeholder="Your Email" required />
 >    <textarea rows="10" cols="20" placeholder="Write me something nice!" required></textarea>
@@ -124,6 +129,7 @@ When you have added the button class, you will see that the button is a darker g
 
 > [solution]
 > Our HTML should look like this now:
+> 
 > ```
 >    <section>
 >        <h2 class="sub title">Contact Kitty</h2>
@@ -159,6 +165,7 @@ Let's remove the squashiness of the form by adding some margin and padding to th
 
 > [solution]
 > The above form was created with the properties in the list above and the following values in the CSS:
+> 
 > ```
 >    .input-field {
 >      width: 80%;

@@ -21,6 +21,7 @@ Your page should now look like this:
 ![Empty gallery](./1-empty-gallery.png "Empty gallery")
 
 > [solution]
+> 
 > ```
 >    <html>
 >        <head>
@@ -67,6 +68,7 @@ Now that we have the two plugins in our project, let's connect them to our HTML 
 
 > [solution]
 > You should have 3 CSS files inside the head tag and 4 JS files just before the body tag closes.
+> 
 > ```
 >    <html>
 >      <head>
@@ -101,6 +103,7 @@ Now that the files are connected, we need to add some HTML first, so the library
 > Add a title attribute to the a tag and an alt attribute to the *img* tag. The *href* attribute for the a tag needs to link to the image you want to display and the *src* attribute of the *img* tag needs to link to the same image or a smaller version of the image (a thumbnail).
 > 
 > Example snippet:
+> 
 > ```
 >    <a title="your_title" href="your_image_url">
 >        <img alt="your_title" src="your_image_url"/>
@@ -110,6 +113,7 @@ Now that the files are connected, we need to add some HTML first, so the library
 ![Gallery without JS](./4-without-js.png "Gallery without JS")
 
 > [solution]
+> 
 > ```
 >    <section class="gallery-container">
 >      <h2 class="sub title">Kitty's Gallery</h2>
@@ -168,6 +172,7 @@ We want our rows to have a certain height, so we will use the rowHeight option. 
 
 > [solution] 
 > We made each row 200 pixels high except the last row which is now justified. We also added a margin of 3 pixels around all the images for a bit of spacing. Making your gallery display the images randomly is totally up to you but we liked it, so we added that parameter.
+> 
 > ```
 >    $( document ).ready(function() {
 >      $("#gallery").justifiedGallery({
@@ -189,6 +194,7 @@ We want to give users the option to click on the image and then having a bigger 
 We need to be sure that all photos from the JustifiedGallery have loaded before we call the Swipebox plugin. Luckily for us, the JustifiedGallery provides events that trigger at certain times of the life cycle of the plugin. One of these events is the **jg.complete** event. When it is triggered, it is the perfect time to initialize the Swipebox plugin.
 
 An example of using an event is here:
+
 ```
     $('#my_gallery').justifiedGallery({
       our_params: 'are here'
@@ -204,6 +210,7 @@ An example of using an event is here:
 
 > [solution]
 > We thought the controls of Swipebox were disappearing too quickly because the default setting is 3 seconds (3000 milliseconds), and instead passed false to **hideBarsDelay** as we don't want the controls to disappear at all. 
+> 
 > ```
 >    $( document ).ready(function() {
 >      $("#gallery").justifiedGallery({
