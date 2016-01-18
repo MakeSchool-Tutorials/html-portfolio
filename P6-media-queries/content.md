@@ -192,4 +192,4 @@ This is going to be easy, as we already know how to use media queries for variou
 >    }
 > ```
 
-And now we have an almost fully responsive site! Nice work! Now let's expand our content and add some more pages to our website in the next part.
+And now we have an almost fully responsive site! Nice work! Now let's expand the content and add some more pages to the website.
