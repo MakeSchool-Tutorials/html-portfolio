@@ -8,7 +8,7 @@ Alright, let's get started. We will use the popular text editor Sublime Text 3 t
 
 You can use any text editor you feel comfortable with, for example the [Atom editor](https://atom.io/), [WebStorm](https://www.jetbrains.com/webstorm/) or just your simple old NotePad (on Windows) or TextEdit (on Mac). It really depends on your own preference and what you want from your text editor.
 
-Let’s start by making a folder on your computer and name it **portfolio**. Inside it, let’s create an HTML file and name it **index.html**. Depending on your text editor, specifying a file with **.html** will activate syntax highlighting while you are writing the code, which makes it easier to read and work with.
+Start by creating a new repository with [this link.](https://classroom.github.com/assignment-invitations/a2a6b017c6cfb6484835403ea4c02305) Clone your new repository to your machine. Inside it, let’s create an HTML file and name it **index.html**. Depending on your text editor, specifying a file with **.html** will activate syntax highlighting while you are writing the code, which makes it easier to read and work with.
 
 > [info]
 > **To boilerplate or not to boilerplate?**
