@@ -102,6 +102,7 @@ It's easiest to think of the website in sections. The top section of the page wi
 
 > [solution]
 > This is what the HTML should roughly look like:
+> 
 >```
 >    <header>
 >      <nav>
@@ -123,6 +124,7 @@ We haven't created those pages yet but we will add the `href`s now as we will cr
 
 > [solution]
 > Use **./** ahead of each page url to make the url path *relative* to the page that the link is on.
+> 
 > ```
 >    <li><a href="./index.html">Home</a></li>
 >    <li><a href="./gallery.html">Gallery</a></li>
@@ -138,7 +140,8 @@ Before adding the middle part of the page, let's focus on the bottom as it is on
 <!-- Comment to break up actionable boxes. -->
 
 > [solution]
-> The bottom section should contain the footer tag and within it, the title of the section as well as the button to download the résumé.
+> The bottom section should contain the footer tag and within it, the title of the section as well as the button to download the resume.
+> 
 >```
 >    <footer>
 >        <h3>About</h3>
@@ -157,6 +160,7 @@ We're already two-thirds of the way there with our HTML structure. Now, let's ad
 
 > [solution]
 > Our hero image and our logo should of course be in <img> tags. The two phrases could be in h1 and h2 tags to achieve a hierarchy of the two phrases.
+> 
 >```
 >    <section>
 >        <img src="https://goo.gl/RG3GtK" />
