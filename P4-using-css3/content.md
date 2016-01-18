@@ -89,7 +89,12 @@ If you now reload the browser, you should see that the content moved but didn't 
 >    }
 > ```
 
-The content is now back into the correct order but your image may be squashed and oval-shaped! That's because it is trying to take up all the available space. We need to tell it that we just want it centered. We will use the **align-items:center;** rule for that.
+The content is now almost back into the correct order. We still need to add another div for the logo and main image to get things properly sorted. 
+
+> [action] 
+> Add another div around the logo and main image and use the flex & column class again.
+
+Now everything is in the right order but your image may be squashed and oval-shaped! That's because it is trying to take up all the available space. We need to tell it that we just want it centered. We will use the **align-items:center;** rule for that.
 
 > [action] 
 > Add this rule to your flex class: 
