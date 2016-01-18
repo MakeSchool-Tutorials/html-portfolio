@@ -4,6 +4,8 @@ slug: using-css3
 ---     
 
 #A circular image
+Now let's do some additional styling to the main content. The kitten image should be round, we want the logo to be positioned above the kitten, and the two phrases should be centered on the image. Things like making circular images and even centering content on web pages used to be a dark art in front-end web development. However, thanks to the latest advances in CSS, we can now forget those terrible times and use the power of flexbox to get everything in place! 
+
 Now that we have some basic styling, let's get everything into place! We also want to make our main image circular, so let's start with that. We are going to use some new CSS3 rules for this. One trick to make the image round is to use the **property** border-radius. Applying a border-radius of 50% (or 100% - why one or the other? Read about it [here](http://jessica-eldredge.com/2014/09/07/border-radius-50-or-100-percent/).) to an element makes it a circle.
 
 > [info]  
