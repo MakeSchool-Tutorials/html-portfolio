@@ -23,6 +23,8 @@ Now that we have some basic styling, let's get everything into place! We also wa
 > The **border** area extends the padding area to the area containing the borders. It is the area inside the border edge.
 >
 > The **margin** area extends the border area with an empty area used to separate the element from its neighbors. It is the area inside the margin edge.
+> 
+> *This information adapted from [Introduction to the CSS box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model) by [Mozilla Contributors](https://developer.mozilla.org/en-US/docs/MDN/About$history) and is licensed under [CC-BY-SA 2.5](http://creativecommons.org/licenses/by-sa/2.5/).*
 
 <!-- Comment to break actionable boxes. -->
 
