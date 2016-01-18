@@ -144,10 +144,10 @@ Now, let's move the content into the correct place vertically. We want the logo 
 > 
 > ![Logo below image](./2-logo-below.png "Logo below image")
 
-Oops! The logo is hidden behind the circular image. This has to do with how our HTML elements are rendered onto the page and the box models we introduced earlier. Because we have the logo first in the HTML followed by the main image, the main image will be rendered last or "on top" of what has come before. But there is a nifty CSS property that overrides the order of things. The z-index property allows you to change the order of elements on the page (but should be used sparingly). The higher the index, the more "on top" the image. 
+Oops! The logo is hidden behind the circular image. This has to do with how our HTML elements are rendered onto the page and the box models we introduced earlier. Because we have the logo first in the HTML followed by the main image, the main image will be rendered last or "on top" of what has come before. But there is a nifty CSS property that overrides the order of things. The `z-index` property allows you to change the order of elements on the page (but should be used sparingly). The higher the index, the more "on top" the image. 
 
 > [action]
-> Add a class to the logo and add the rule **z-index: 2;** to it. Our logo is a bit big, so we will resize it by using the width property. In general, you shouldn't set width and height to fixed pixel values as that will most likely distort images (unless it's a square and you are reusing the proportions).
+> Add a class to the logo and add the rule `z-index: 2;` to it. Our logo is a bit big, so we will resize it by using the width property. In general, you shouldn't set both `width` and `height` to fixed pixel values as that will most likely distort images (unless it's a square and you are reusing the proportions).
 
 <!-- Comment to break actionable boxes. -->
 
