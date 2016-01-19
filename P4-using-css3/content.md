@@ -64,7 +64,7 @@ The flexbox concept might be a bit of beast to wrap your head around, so let's g
 > ```
 > Why did we add four rules instead of just one? Ultimately, we still have to cater to the various browser versions that implement the same style using different rules. All newer browsers use the `display:flex;` rule, but older browsers still need their **vendor prefix**. A good page to check if a prefix is needed for a rule, is [http://shouldiprefix.com/](http://shouldiprefix.com/).
 
-If you now reload the browser, you should see that the content moved but didn't get centered. The content has now aligned itself horizontally. If you read about flexbox, you'll know why, but let's recap. Flex has two different ways to align elements and the default setting is horizontally (like a row). To change its default behavior, we have to use the **flex-direction** property. 
+If you reload the browser, you should see that the content moved, but didn't get centered. The content has now aligned itself horizontally. If you read about flexbox, you'll know why, but let's recap. Flex has two different ways to align elements and the default setting is horizontally (like a row). To change its default behavior, we have to use the **flex-direction** property. 
 
 ![Content in flex row](./1-flex-row.png "Content in flex row")
 
