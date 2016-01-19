@@ -27,6 +27,23 @@ Once you're logged in, we will create a new repository.
 
 Now that we have created a new repository, we need to pull this repository down onto our local machine.
 
+> [info]
+> **Pushing to 2 repositories**
+> 
+> If you have already created a repository to push things to the MakeSchool-17 organization, you can still use Github Pages. All you need to do is push your content from your local repository to a new *remote* repository. 
+> You still need to follow the steps below but instead of cloning your new Github Pages repository, you will add the new Github Pages repo to your local repo as a second remote repository and then push to both. 
+> Instead of cloning the new repo, go to your terminal and add the new repo as a remote repo by typing the following command:
+> 
+> `git remote add ghpages git@github.com:kitty-makeschool/kitty-makeschool.github.io.git`
+> 
+> The part before the slash is your Github username, the part after the slash is your new repository. When you have done this, you need to push your code to this new repo by using the command: 
+> 
+> `git push ghpages HEAD`
+> 
+> This will push all of your code to the new repo. If you make any changes to your local repo, you will have to remember to push to both repos, so that the changes will be up to date on both remote repos.  
+
+<!-- Comment to break actionable boxes. -->
+
 > [action]
 > Open your terminal and navigate to the directory where you already have your portfolio folder. Type the following command:
 > 
@@ -48,7 +65,8 @@ Go to the directory that contains your new repo and the portfolio folder in **Fi
 
 #Pushing to Github
 Go back to your terminal and navigate to your new repo. You can change directories by using the `cd your_repo_name` command. Commit all your files by doing the following steps:
->
+
+> [action]
 > - `git status` - this will show you all files that are new or changed
 > - `git add .` - this will add all the files
 > - `git commit -m 'initial commit'` - this will create the first commit and give it a meaningful message, that you can refer to later
@@ -57,6 +75,8 @@ Go back to your terminal and navigate to your new repo. You can change directori
 When you hit enter on the last command, you will be prompted to enter your Github username and Github password before the files will be pushed up.
 
 Now that we have all of our files up on Github, all we need to do is go to our URL **your_github_username.github.io** and look at our brand new portfolio website! We are almost done now but we still need to activate the Formspree service. 
+
+#Activate Formspree
 
 > [action]
 > Go to our form on the **Contact Me** page and submit your first email. Once you have clicked "Send", you need to go to your email account where you should have received an email from Formspree asking you to confirm that you want in fact receive emails from this form. 
