@@ -45,6 +45,8 @@ Now that we have created a new repository, we need to pull this repository down 
 <!-- Comment to break actionable boxes. -->
 
 > [action]
+> You only need to follow the clone instructions if you are **not** pushing to two repos! If you do, then you don't need to clone and can move on to the next section - pushing to your repo.
+> 
 > Open your terminal and navigate to the directory where you already have your portfolio folder. Type the following command:
 > 
 > `git clone https://github.com/your_github_username/your_github_username.github.io.git`
