@@ -68,7 +68,7 @@ Currently, there is some debate as to the best way to link JavaScript source. Th
 Most of the time you don't need the JavaScript as soon as the page is loaded because most of your content will likely be written in HTML. So why load the JavaScript in before the HTML? If you've had a look at the [HTML5 Boilerplate](https://html5boilerplate.com/), you will see that the latest best practice is to load the JavaScript inside the body tag, just before it closes. This ensures that the HTML can render and your visitor sees something happening before the browser starts loading in the JavaScript.
 
 > [action]
-> Add a folder to your project and name it **js**. Create an empty file called **portfolio.js** inside the js folder. Create another folder inside the js directory and name it **vendor**.   
+> Add a folder to your project and name it **js**. Create an empty file called **portfolio.js** inside the js folder. Create another folder inside your project's root directory and name it **vendor**.   
 
 ![Add JS in Sublime](./1-sublime-js.png "Add JS in Sublime")
 
@@ -93,7 +93,7 @@ Now let's add our script tags to the page.
 >                <div class="button">Download My CV</div>
 >            </footer>
 >            
->            <script src="./js/vendor/jquery-2.2.0.min.js"></script>
+>            <script src="./vendor/jquery-2.2.0.min.js"></script>
 >            <script src="./js/portfolio.js"></script>
 >        </body>
 >    </html>

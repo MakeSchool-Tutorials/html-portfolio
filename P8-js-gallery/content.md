@@ -41,7 +41,7 @@ Your page should now look like this:
 >                </nav>
 >            </header>
 >    
->            <script src="./js/vendor/jquery-2.2.0.min.js"></script>
+>            <script src="./vendor/jquery-2.2.0.min.js"></script>
 >            <script src="./js/portfolio.js"></script>
 >        </body>
 >    </html>
