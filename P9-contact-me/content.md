@@ -117,9 +117,9 @@ The form is not very pretty yet but we will make it look better soon. Before we 
 One thing that is very easy to fix, and we already have classes for, is the order of the form. Instead of having everything in a row, we want the form to be in a column. Any idea which classes I mean? Yes, `flex` of course!
 
 > [action]
-> Add the `flex` and `column` class to the form. We also already have classes for the title: add `title` and `sub` to the `h2` tag.
+> Add the `flex` and `column` class to the form. We also already have classes for the title: add `title` and `sub` to the `h2` tag. The title won't be centered, but we want it to be, so fix that by adding `text-align: center` as a rule to the `title` class.
 
-With those small additions the form is better looking, but there are still some issues remaining. Let's add the `button` class to our button.
+With those small additions the form is better looking, but there are still some issues remaining.
 
 > [action]
 > Add the `button` class to the button. Reload the page.

@@ -259,7 +259,7 @@ Make sure the page looks like you want by spending some time adding some CSS to 
 > HTML file: 
 > 
 > ```
->    <body class="default">
+>    <body>
 >      <header class="header">
 >          <nav class="nav">
 >              <ul>
@@ -325,7 +325,6 @@ Make sure the page looks like you want by spending some time adding some CSS to 
 >    .title {
 >      color: #019cdb;
 >      text-transform: uppercase;
->      text-align: center;
 >      letter-spacing: 3px;
 >    }
 >    
