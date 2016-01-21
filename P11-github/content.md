@@ -4,14 +4,14 @@ slug: github-pages
 ---     
 
 #What is Github Pages - a quick recap
-You probably already know Github, which is a web-based Git repository hosting service. It is great for version control and if you have a free account, it allows you to show off your code through public repositories. If you pay for Github, you can also have private repositories. [Github Pages](https://pages.github.com/) is basically Github and a website hosting service rolled into one. It allows you to have a normal repository and as soon as you push any changes to your repo, they will be published live. That is the perfect setup for our little portfolio site.
+You probably already know Github, which is a web-based Git repository hosting service. It's great for version control and if you have a free account, it allows you to show off your code through public repositories. If you pay for Github, you can also have private repositories. [Github Pages](https://pages.github.com/) is basically Github and a website hosting service rolled into one. It allows you to have a normal repository and as soon as you push any changes to your repo, they will be published live. That is the perfect setup for our little portfolio site.
 
-We need to create a repo now and name it your_github_username.github.io, which will automatically make it accessible through the URL *your_github_username.github.io*. So let's go ahead and do this together.
+You will need to create a repo now and name it your_github_username.github.io, which will automatically make it accessible through the URL `your_github_username.github.io`. 
 
 #Creating a Github repo
 Go to [Github](https://github.com) and login if you have an account. If you don't have an account, sign up for Github. It is a very useful account to have. 
 
-Once you're logged in, we will create a new repository.
+Once you're logged in, create a new repository.
 
 > [action]
 > Click on the green "New repository" button. 
@@ -21,22 +21,22 @@ Once you're logged in, we will create a new repository.
 <!-- Comment to break actionable boxes. -->
 
 > [action]
-> Name the repository *your_github_username.github.io*. Give it a meaningful description and click the "Create repository" button. **It's important to use your Github username and add the github.io, otherwise it won't work!**
+> Name the repository `your_github_username.github.io`. Give it a meaningful description and click the "Create repository" button. **It's important to use your Github username and add the github.io, otherwise it won't work!**
 > 
 > ![Name new repo](./2-name-repo.png "Name new repo")
 
-Now that we have created a new repository, we need to pull this repository down onto our local machine.
+Now that you have created a new repository, you need to clone this repository down to your local machine.
 
 > [info]
 > **Pushing to 2 repositories**
 > 
-> If you have already created a repository to push things to the MakeSchool-17 organization, you can still use Github Pages. All you need to do is push your content from your local repository to a new *remote* repository. 
+> If you already created a repository to push things to the MakeSchool-17 organization, you can still use Github Pages. All you need to do is push your content from your local repository to a second remote repository. 
 > You still need to follow the steps below but instead of cloning your new Github Pages repository, you will add the new Github Pages repo to your local repo as a second remote repository and then push to both. 
 > Instead of cloning the new repo, go to your terminal and add the new repo as a remote repo by typing the following command:
 > 
 > `git remote add ghpages git@github.com:kitty-makeschool/kitty-makeschool.github.io.git`
 > 
-> The part before the slash is your Github username, the part after the slash is your new repository. When you have done this, you need to push your code to this new repo by using the command: 
+> The part before the slash is your Github username, the part after the slash is your new repository. Doing this adds a second remote repository, named `ghpages`. When you have done this, you need to push your code to this new repo by using the command: 
 > 
 > `git push ghpages HEAD`
 > 
@@ -51,7 +51,7 @@ Now that we have created a new repository, we need to pull this repository down 
 > 
 > `git clone https://github.com/your_github_username/your_github_username.github.io.git`
 > 
-> Hit enter and the repository will download. 
+> Hit enter and the repository will be download. 
 
 <!-- Comment to break actionable boxes. -->
 
@@ -69,19 +69,20 @@ Go to the directory that contains your new repo and the portfolio folder in **Fi
 Go back to your terminal and navigate to your new repo. You can change directories by using the `cd your_repo_name` command. Commit all your files by doing the following steps:
 
 > [action]
+> 
 > - `git status` - this will show you all files that are new or changed
 > - `git add .` - this will add all the files
-> - `git commit -m 'initial commit'` - this will create the first commit and give it a meaningful message, that you can refer to later
+> - `git commit -m 'initial commit'` - this will create the first commit - give it a meaningful message, that you can refer to later
 > - `git push origin HEAD` - this pushes all of the code in your commit up to Github
 
 When you hit enter on the last command, you will be prompted to enter your Github username and Github password before the files will be pushed up.
 
-Now that we have all of our files up on Github, all we need to do is go to our URL **your_github_username.github.io** and look at our brand new portfolio website! We are almost done now but we still need to activate the Formspree service. 
+Now that you have all of your files up on Github, all you need to do is go to your URL `your_github_username.github.io` and look at the brand new portfolio website! You are almost done now but you still need to activate the Formspree service. 
 
 #Activate Formspree
 
 > [action]
-> Go to our form on the **Contact Me** page and submit your first email. Once you have clicked "Send", you need to go to your email account where you should have received an email from Formspree asking you to confirm that you want in fact receive emails from this form. 
+> Go to your form on the **Contact Me** page and submit your first email. Once you have clicked "Send", you need to go to your email account where you should have received an email from Formspree asking you to confirm that you want in fact receive emails from this form. 
 
 ![Formspree confirmation email](./3-confirm-email.png "Formspree confirmation email")
 
